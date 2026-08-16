@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-16",
- "updatedAt": "2026-08-16T14:33:18.711Z",
+ "updated": "2026-08-17",
+ "updatedAt": "2026-08-16T21:17:14.755Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -62,6 +62,19 @@
      "rank": 4
     },
     {
+     "label": "汗拭きシート（無香料）",
+     "note": "現場の必需品。無香料がマナー",
+     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入*3袋セット)",
+     "price": 2103,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/751/528751.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F528751%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
+     "reviewAvg": 4.8,
+     "reviewCount": 20,
+     "shop": "楽天24",
+     "rank": 5
+    },
+    {
      "label": "塩分チャージタブレット",
      "note": "夏の屋外・イベントの熱中症対策",
      "name": "カバヤ 塩分チャージタブレッツ 3種240g 4種320g アソート 選べる 約78～104粒 個包装 塩タブレット 塩",
@@ -72,7 +85,7 @@
      "reviewAvg": 4.63,
      "reviewCount": 19,
      "shop": "まいにち用度/備品と消耗品",
-     "rank": 5
+     "rank": 6
     },
     {
      "label": "個包装ラムネ",
@@ -85,19 +98,6 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 6
-    },
-    {
-     "label": "汗拭きシート（無香料）",
-     "note": "現場の必需品。無香料がマナー",
-     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入)",
-     "price": 602,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/856/4902806112856.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 3,
-     "shop": "楽天24",
      "rank": 7
     },
     {
