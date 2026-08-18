@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-17",
- "updatedAt": "2026-08-17T00:50:39.445Z",
+ "updated": "2026-08-18",
+ "updatedAt": "2026-08-18T14:02:22.373Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -12,14 +12,14 @@
     {
      "label": "個包装の焼き菓子",
      "note": "配りやすく衣装を汚さない大定番",
-     "name": "＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア お菓子 ギフト 詰め合わせ 個包装 クッキー",
-     "price": 1188,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/tmm/tmm01101f_thm_v1.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "ヨックモック シガール 14本入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プ",
+     "price": 1339,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/10295304/cigare/cigare_14.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011201010%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.75,
-     "reviewCount": 1386,
-     "shop": "シュクレイ楽天市場店",
+     "reviewAvg": 4.08,
+     "reviewCount": 831,
+     "shop": "ヨックモック 楽天市場店",
      "rank": 1
     },
     {
@@ -121,29 +121,29 @@
      "rank": 3
     },
     {
-     "label": "汗拭きシート（無香料）",
-     "note": "現場の必需品。無香料がマナー",
-     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入*3袋セット)",
-     "price": 2103,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/751/528751.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F528751%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
-     "reviewAvg": 4.8,
-     "reviewCount": 20,
-     "shop": "楽天24",
-     "rank": 4
-    },
-    {
      "label": "塩分チャージタブレット",
      "note": "夏の屋外・イベントの熱中症対策",
      "name": "カバヤ 塩分チャージタブレッツ 3種240g 4種320g アソート 選べる 約78～104粒 個包装 塩タブレット 塩",
-     "price": 1980,
+     "price": 1680,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shopk-net/cabinet/00000.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopk-net%2Fx001794y3h%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%A1%A9%E5%88%86%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%20%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88&tag=sashiire01-22",
      "reviewAvg": 4.63,
      "reviewCount": 19,
      "shop": "まいにち用度/備品と消耗品",
+     "rank": 4
+    },
+    {
+     "label": "汗拭きシート（無香料）",
+     "note": "現場の必需品。無香料がマナー",
+     "name": "マンダム ギャツビー アイスデオドラント ボディペーパー 無香料 徳用 30枚 （医薬部外品）",
+     "price": 327,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/matsukiyo/cabinet/d0069/4902806112856_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsukiyo%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
+     "reviewAvg": 5,
+     "reviewCount": 3,
+     "shop": "マツモトキヨシ楽天市場店",
      "rank": 5
     }
    ]
