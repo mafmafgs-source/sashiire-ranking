@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-18",
- "updatedAt": "2026-08-18T14:02:22.373Z",
+ "updated": "2026-08-19",
+ "updatedAt": "2026-08-18T21:21:09.427Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -36,19 +36,6 @@
      "rank": 2
     },
     {
-     "label": "ゼリー飲料",
-     "note": "メイクを崩さず栄養補給できる",
-     "name": "ゼリー飲料 ミニッツメイドぷるんぷるんQoo ぶどう 朝食 ゼリー 125gパウチ 6本×1ケース 計:6本 子供ゼリー",
-     "price": 1300,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/4902102100526-ccw1.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F4902102100526-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 3,
-     "shop": "健楽美生活館",
-     "rank": 3
-    },
-    {
      "label": "ミンティア・タブレット",
      "note": "かさばらない気配り枠",
      "name": "ミンティア ワイルド＆クール 50粒",
@@ -59,7 +46,7 @@
      "reviewAvg": 4,
      "reviewCount": 1,
      "shop": "サンドラッグe-shop",
-     "rank": 4
+     "rank": 3
     },
     {
      "label": "個包装のど飴",
@@ -72,6 +59,19 @@
      "reviewAvg": 0,
      "reviewCount": 0,
      "shop": "キャラショップPLAZA",
+     "rank": 4
+    },
+    {
+     "label": "ゼリー飲料",
+     "note": "メイクを崩さず栄養補給できる",
+     "name": "たらみ おいしい蒟蒻ゼリー 選べる 1種類×6個 150g パウチ ゼリー飲料 まとめ買い 桃 りんご マスカット ぶど",
+     "price": 1500,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dateshouten/cabinet/10408428/10408473/10530447/6main.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdateshouten%2Fr00250%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "伊達商店 楽天市場店",
      "rank": 5
     }
    ]
@@ -110,14 +110,14 @@
     {
      "label": "冷感タオル",
      "note": "夏の屋外撮影の救世主",
-     "name": "冷感タオル 3色セット クールタオル 濡らさない 冷却タオル 大判100CM*30CM キッズ 大人 スポーツ 熱中症対",
-     "price": 1190,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/xili01shop/cabinet/12530835/imgrc0156252999.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fxili01shop%2Fr5_cold_towel001%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "冷感タオル 肌温度-15℃ ザムスト 即効冷感 抗菌 防臭 UVカット 熱中症対策 暑さ対策 暑さ対策グッズ 冷感グッズ",
+     "price": 1936,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/zamst/cabinet/10149240/10284387/13757859/388701_2608.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fzamst%2F388701%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 4.49,
-     "reviewCount": 177,
-     "shop": "セレクトショップ-ヒマワリ",
+     "reviewAvg": 4.02,
+     "reviewCount": 42,
+     "shop": "ザムスト公式ショップ楽天市場店",
      "rank": 3
     },
     {
