@@ -42,8 +42,11 @@ function moshimoWrap(rakutenUrl) {
   return `https://af.moshimo.com/af/c/click?a_id=${encodeURIComponent(MOSHIMO.aId)}&p_id=${encodeURIComponent(MOSHIMO.pId)}&pc_id=${encodeURIComponent(MOSHIMO.pcId)}&pl_id=${encodeURIComponent(MOSHIMO.plId)}&url=${encodeURIComponent(rakutenUrl)}`;
 }
 
-/* 2026年の楽天API刷新後の新エンドポイント（旧 app.rakuten.co.jp は2026-05-14停止） */
-const API = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601';
+/* 2026年の楽天API刷新後の新エンドポイント（旧 app.rakuten.co.jp は2026-05-14停止）
+   バージョンは廃止されると 400 {"error":"wrong_parameter","error_description":"API Configuration not found"}
+   になり全スロットが落ちる。ドキュメントの「古いバージョン」から消えたら差し替えること。
+   （20220601 は 2026-08-18 に廃止済みを確認 → 20260701 へ） */
+const API = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /* JST基準の現在月（季節枠の判定に使用） */
@@ -147,9 +150,12 @@ async function main() {
         try {
           const found = await searchRakuten(slot.query, cat.price);
           it = pickItem(found, config.rules.minReviewAvg, slot);
-          await sleep(config.rules.requestIntervalMs); // 楽天APIのレート制限（1req/秒）対策
         } catch (err) {
           console.warn(`WARN: "${slot.query}" の取得に失敗（スキップ）:`, err.message);
+        } finally {
+          /* 楽天APIのレート制限（1req/秒）対策。失敗時こそ間隔を空ける
+             （try内に置くと1件の失敗で待機が飛び、以降が429の連鎖で全滅する） */
+          await sleep(config.rules.requestIntervalMs);
         }
       }
       if (!it) { console.warn(`WARN: "${slot.query}" は条件を満たす商品なし（スキップ）`); continue; }
