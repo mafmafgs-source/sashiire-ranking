@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-22",
- "updatedAt": "2026-08-21T21:21:37.001Z",
+ "updated": "2026-08-23",
+ "updatedAt": "2026-08-22T21:18:51.187Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -108,19 +108,6 @@
      "rank": 2
     },
     {
-     "label": "冷感タオル",
-     "note": "夏の屋外撮影の救世主",
-     "name": "冷感タオル 肌温度-15℃ ザムスト 即効冷感 抗菌 防臭 UVカット 熱中症対策 暑さ対策 暑さ対策グッズ 冷感グッズ",
-     "price": 1936,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/zamst/cabinet/10149240/10284387/13757859/388701_2608.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fzamst%2F388701%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 3.98,
-     "reviewCount": 43,
-     "shop": "ザムスト公式ショップ楽天市場店",
-     "rank": 3
-    },
-    {
      "label": "塩分チャージタブレット",
      "note": "夏の屋外・イベントの熱中症対策",
      "name": "カバヤ 塩分タブレット 156個 塩分チャージ 塩分チャージタブレット 塩タブレット 個包装 選べる3味・組み合わせ 塩",
@@ -131,6 +118,19 @@
      "reviewAvg": 4.43,
      "reviewCount": 14,
      "shop": "グッドスマイル楽天市場店",
+     "rank": 3
+    },
+    {
+     "label": "冷感タオル",
+     "note": "夏の屋外撮影の救世主",
+     "name": "冷感タオル 瞬冷 スポーツタオル 熱中症対策",
+     "price": 330,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fheimin/cabinet/sonohoka/yy0060/0436-00.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffheimin%2Flt-f-0086%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
+     "reviewAvg": 3.14,
+     "reviewCount": 7,
+     "shop": "MINAKO WORTH",
      "rank": 4
     },
     {
