@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-24",
- "updatedAt": "2026-08-23T21:19:15.498Z",
+ "updated": "2026-08-25",
+ "updatedAt": "2026-08-24T21:25:46.877Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -9,19 +9,6 @@
    "title": "お菓子の定番",
    "lead": "配りやすい個包装・常温OK・手が汚れないが鉄則。メイクと衣装を守りながらみんなに行き渡る定番のお菓子です。",
    "items": [
-    {
-     "label": "個包装の焼き菓子",
-     "note": "配りやすく衣装を汚さない大定番",
-     "name": "ヨックモック シガール 14本入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プ",
-     "price": 1339,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/10295304/cigare/cigare_14.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011201010%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.08,
-     "reviewCount": 832,
-     "shop": "ヨックモック 楽天市場店",
-     "rank": 1
-    },
     {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
@@ -33,6 +20,19 @@
      "reviewAvg": 4.55,
      "reviewCount": 511,
      "shop": "マヌカハニーのコンビタ 公式店",
+     "rank": 1
+    },
+    {
+     "label": "個包装の焼き菓子",
+     "note": "配りやすく衣装を汚さない大定番",
+     "name": "夏ギフト ご挨拶 退職 お菓子 カナルチェ ケーキ セット 6～24個 3種類アソート",
+     "price": 1399,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/maruheart/cabinet/marathon/mara_20260824/1/canalceset3.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruheart%2Fcanalceset%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 4.66,
+     "reviewCount": 44,
+     "shop": "ギフト マルハート",
      "rank": 2
     },
     {
@@ -95,9 +95,22 @@
      "rank": 1
     },
     {
+     "label": "冷感タオル",
+     "note": "夏の屋外撮影の救世主",
+     "name": "＼2個で半額クーポンマラソン限定｜27日10時まで／ クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 9",
+     "price": 1798,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b11/b1164_001_v10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
+     "reviewAvg": 4.38,
+     "reviewCount": 213,
+     "shop": "BELLEMOND(ベルモンド)公式",
+     "rank": 2
+    },
+    {
      "label": "蒸気でホットアイマスク",
      "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
-     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
+     "name": "≪2個以上500円OFF/3個以上1000円OFFクーポン27日10時迄≫めぐりズム ホットアイマスク 蒸気めぐるアイマ",
      "price": 1650,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
@@ -105,19 +118,6 @@
      "reviewAvg": 4.7,
      "reviewCount": 205,
      "shop": "miui",
-     "rank": 2
-    },
-    {
-     "label": "汗拭きシート（無香料）",
-     "note": "現場の必需品。無香料がマナー",
-     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入*3袋セット)",
-     "price": 2121,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/751/528751.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F528751%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
-     "reviewAvg": 4.8,
-     "reviewCount": 20,
-     "shop": "楽天24",
      "rank": 3
     },
     {
@@ -134,16 +134,16 @@
      "rank": 4
     },
     {
-     "label": "冷感タオル",
-     "note": "夏の屋外撮影の救世主",
-     "name": "冷感タオル 瞬冷 スポーツタオル 熱中症対策",
-     "price": 330,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fheimin/cabinet/sonohoka/yy0060/0436-00.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffheimin%2Flt-f-0086%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 3.14,
-     "reviewCount": 7,
-     "shop": "MINAKO WORTH",
+     "label": "汗拭きシート（無香料）",
+     "note": "現場の必需品。無香料がマナー",
+     "name": "マンダム ギャツビー アイスデオドラント ボディペーパー 無香料 徳用 30枚 （医薬部外品）",
+     "price": 327,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/matsukiyo/cabinet/d0069/4902806112856_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsukiyo%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
+     "reviewAvg": 5,
+     "reviewCount": 3,
+     "shop": "マツモトキヨシ楽天市場店",
      "rank": 5
     }
    ]
