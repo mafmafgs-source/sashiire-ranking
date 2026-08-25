@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-25",
- "updatedAt": "2026-08-24T21:25:46.877Z",
+ "updated": "2026-08-26",
+ "updatedAt": "2026-08-25T21:25:06.857Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -9,6 +9,19 @@
    "title": "お菓子の定番",
    "lead": "配りやすい個包装・常温OK・手が汚れないが鉄則。メイクと衣装を守りながらみんなに行き渡る定番のお菓子です。",
    "items": [
+    {
+     "label": "個包装の焼き菓子",
+     "note": "配りやすく衣装を汚さない大定番",
+     "name": "ヨックモック シガール 14本入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プ",
+     "price": 1339,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/10295304/cigare/cigare_14.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011201010%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 4.08,
+     "reviewCount": 832,
+     "shop": "ヨックモック 楽天市場店",
+     "rank": 1
+    },
     {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
@@ -20,20 +33,20 @@
      "reviewAvg": 4.55,
      "reviewCount": 511,
      "shop": "マヌカハニーのコンビタ 公式店",
-     "rank": 1
+     "rank": 2
     },
     {
-     "label": "個包装の焼き菓子",
-     "note": "配りやすく衣装を汚さない大定番",
-     "name": "夏ギフト ご挨拶 退職 お菓子 カナルチェ ケーキ セット 6～24個 3種類アソート",
-     "price": 1399,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/maruheart/cabinet/marathon/mara_20260824/1/canalceset3.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruheart%2Fcanalceset%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.66,
-     "reviewCount": 44,
-     "shop": "ギフト マルハート",
-     "rank": 2
+     "label": "ミンティア・タブレット",
+     "note": "かさばらない気配り枠",
+     "name": "ミンティア MINTIA 10個 まとめ買いセット (ドライハード,ワイルド&クール,コールドスマッシュ他）ネコポス",
+     "price": 1188,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/healthy-bright/cabinet/top/sweets/tablet/202410mintia_10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhealthy-bright%2F472%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
+     "reviewAvg": 4.89,
+     "reviewCount": 62,
+     "shop": "ヘルシーブライト楽天市場店",
+     "rank": 3
     },
     {
      "label": "個包装ラムネ",
@@ -46,19 +59,6 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 3
-    },
-    {
-     "label": "ミンティア・タブレット",
-     "note": "かさばらない気配り枠",
-     "name": "ミンティア ワイルド＆クール 50粒",
-     "price": 1078,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sundrug/cabinet/52/4946842501908x10.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsundrug%2F4946842501908x10%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 1,
-     "shop": "サンドラッグe-shop",
      "rank": 4
     },
     {
@@ -97,14 +97,14 @@
     {
      "label": "冷感タオル",
      "note": "夏の屋外撮影の救世主",
-     "name": "＼2個で半額クーポンマラソン限定｜27日10時まで／ クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 9",
-     "price": 1798,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b11/b1164_001_v10.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "楽天ランキング1位 クールタオル SEA BREEZE 冷感タオル uvカット子供 首 キッズ 子ども 熱中症対策 冷却",
+     "price": 1000,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/renfrojapan/cabinet/08884911/cool/2026/szcug11ec_main-2new.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frenfrojapan%2Fsbcma10ec%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 4.38,
-     "reviewCount": 213,
-     "shop": "BELLEMOND(ベルモンド)公式",
+     "reviewAvg": 4.51,
+     "reviewCount": 800,
+     "shop": "RENFRO",
      "rank": 2
     },
     {
@@ -123,14 +123,14 @@
     {
      "label": "塩分チャージタブレット",
      "note": "夏の屋外・イベントの熱中症対策",
-     "name": "カバヤ 塩分タブレット 156個 塩分チャージ 塩分チャージタブレット 塩タブレット 個包装 選べる3味・組み合わせ 塩",
-     "price": 1600,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/egao2525/cabinet/12070723/compass1748927014.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fegao2525%2Fenbuncharge%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "カバヤ 塩分チャージタブレッツ 3種240g 4種320g アソート 選べる 約78～104粒 個包装 塩タブレット 塩",
+     "price": 1680,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shopk-net/cabinet/00000.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopk-net%2Fx001794y3h%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%A1%A9%E5%88%86%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%20%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88&tag=sashiire01-22",
-     "reviewAvg": 4.43,
-     "reviewCount": 14,
-     "shop": "グッドスマイル楽天市場店",
+     "reviewAvg": 4.63,
+     "reviewCount": 19,
+     "shop": "まいにち用度/備品と消耗品",
      "rank": 4
     },
     {
