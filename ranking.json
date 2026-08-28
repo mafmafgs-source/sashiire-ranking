@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-27",
- "updatedAt": "2026-08-27T00:26:23.148Z",
+ "updated": "2026-08-28",
+ "updatedAt": "2026-08-28T05:05:46.716Z",
  "month": 8,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -12,14 +12,14 @@
     {
      "label": "個包装の焼き菓子",
      "note": "配りやすく衣装を汚さない大定番",
-     "name": "ヨックモック シガール 14本入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プ",
-     "price": 1339,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/10295304/cigare/cigare_14.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011201010%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア お菓子 ギフト 詰め合わせ 個包装 クッキー",
+     "price": 1188,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/tmm/tmm01101f_thm_v1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.08,
-     "reviewCount": 832,
-     "shop": "ヨックモック 楽天市場店",
+     "reviewAvg": 4.75,
+     "reviewCount": 1392,
+     "shop": "シュクレイ楽天市場店",
      "rank": 1
     },
     {
@@ -36,6 +36,19 @@
      "rank": 2
     },
     {
+     "label": "ゼリー飲料",
+     "note": "メイクを崩さず栄養補給できる",
+     "name": "ゼリー飲料 飲むゼリー ゼリー 詰め合わせ ミニッツメイド ぷるんぷるん Qoo マスカット もも みかん リンゴ 12",
+     "price": 1200,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/490210-qchoice-ccw1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F490210-qchoice-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
+     "reviewAvg": 4.66,
+     "reviewCount": 38,
+     "shop": "健楽美生活館",
+     "rank": 3
+    },
+    {
      "label": "個包装ラムネ",
      "note": "ブドウ糖補給。長丁場の集中力に",
      "name": "本州 星形ラムネと金平糖 個包装 500g （小袋 約56個）スター トゥインクル 小分け 配る 星 ラムネ こんぺいと",
@@ -46,32 +59,19 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 3
+     "rank": 4
     },
     {
      "label": "ミンティア・タブレット",
      "note": "かさばらない気配り枠",
-     "name": "アサヒグループ食品 【11種から選べるミンティア ブリーズ 30粒 選択8種 各1個 合計8個 アサヒグループ ミンティ",
-     "price": 1698,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/worldcontact/cabinet/06747508/11874648/11syu_choose_8.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fworldcontact%2F6015%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "ミンティア ワイルド＆クール 50粒",
+     "price": 1078,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sundrug/cabinet/52/4946842501908x10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsundrug%2F4946842501908x10%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
-     "reviewAvg": 0,
-     "reviewCount": 0,
-     "shop": "ワールドコンタクト",
-     "rank": 4
-    },
-    {
-     "label": "ゼリー飲料",
-     "note": "メイクを崩さず栄養補給できる",
-     "name": "たらみ おいしい蒟蒻ゼリー 選べる 1種類×6個 150g パウチ ゼリー飲料 まとめ買い 桃 りんご マスカット ぶど",
-     "price": 1350,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dateshouten/cabinet/10408428/10408473/10530447/6main.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdateshouten%2Fr00250%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
-     "reviewAvg": 0,
-     "reviewCount": 0,
-     "shop": "伊達商店 楽天市場店",
+     "reviewAvg": 4,
+     "reviewCount": 1,
+     "shop": "サンドラッグe-shop",
      "rank": 5
     }
    ]
@@ -97,7 +97,7 @@
     {
      "label": "冷感タオル",
      "note": "夏の屋外撮影の救世主",
-     "name": "＼2個で半額クーポン27日10時まで／ クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 98％カット 3",
+     "name": "クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 98％カット 30×100cm | キッズ こども 冷却",
      "price": 1798,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b11/b1164_001_v10.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
@@ -110,7 +110,7 @@
     {
      "label": "蒸気でホットアイマスク",
      "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
-     "name": "≪2個以上500円OFF/3個以上1000円OFFクーポン27日10時迄≫めぐりズム ホットアイマスク 蒸気めぐるアイマ",
+     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
      "price": 1650,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
