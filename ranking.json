@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-01",
- "updatedAt": "2026-09-01T00:22:28.853Z",
+ "updated": "2026-09-02",
+ "updatedAt": "2026-09-01T22:59:40.521Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -116,7 +116,7 @@
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%81%E3%81%90%E3%82%8A%E3%82%BA%E3%83%A0%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF&tag=sashiire01-22",
      "reviewAvg": 4.69,
-     "reviewCount": 207,
+     "reviewCount": 208,
      "shop": "miui",
      "rank": 3
     },
