@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-04",
- "updatedAt": "2026-09-03T22:58:05.136Z",
+ "updated": "2026-09-05",
+ "updatedAt": "2026-09-04T22:46:08.494Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -9,19 +9,6 @@
    "title": "お菓子の定番",
    "lead": "配りやすい個包装・常温OK・手が汚れないが鉄則。メイクと衣装を守りながらみんなに行き渡る定番のお菓子です。",
    "items": [
-    {
-     "label": "個包装の焼き菓子",
-     "note": "配りやすく衣装を汚さない大定番",
-     "name": "9/1 10:00〜9/11 14:00まで＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア ",
-     "price": 1188,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/pointup/imgrc0125066786.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.75,
-     "reviewCount": 1393,
-     "shop": "シュクレイ楽天市場店",
-     "rank": 1
-    },
     {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
@@ -33,6 +20,19 @@
      "reviewAvg": 4.55,
      "reviewCount": 511,
      "shop": "マヌカハニーのコンビタ 公式店",
+     "rank": 1
+    },
+    {
+     "label": "個包装の焼き菓子",
+     "note": "配りやすく衣装を汚さない大定番",
+     "name": "神戸浪漫 神戸トラッドクッキー",
+     "price": 1740,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/friend-gift/cabinet/renewal/re2022/imgrc0085660771.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffriend-gift%2F10031457%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 4.32,
+     "reviewCount": 221,
+     "shop": "暮らしのギフト 「Lumiere」",
      "rank": 2
     },
     {
@@ -49,6 +49,19 @@
      "rank": 3
     },
     {
+     "label": "ミンティア・タブレット",
+     "note": "かさばらない気配り枠",
+     "name": "ミンティア コールドスマッシュ 7g（50粒入）×10個 まとめ買い",
+     "price": 1188,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/quickfactory/cabinet/sweets/07236167/coldsmash_10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fquickfactory%2Fr007573%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
+     "reviewAvg": 4.9,
+     "reviewCount": 10,
+     "shop": "クイックファクトリー",
+     "rank": 4
+    },
+    {
      "label": "個包装ラムネ",
      "note": "ブドウ糖補給。長丁場の集中力に",
      "name": "本州 星形ラムネと金平糖 個包装 500g （小袋 約56個）スター トゥインクル 小分け 配る 星 ラムネ こんぺいと",
@@ -59,19 +72,6 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 4
-    },
-    {
-     "label": "ミンティア・タブレット",
-     "note": "かさばらない気配り枠",
-     "name": "ミンティア ワイルド＆クール 50粒",
-     "price": 1078,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sundrug/cabinet/52/4946842501908x10.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsundrug%2F4946842501908x10%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 1,
-     "shop": "サンドラッグe-shop",
      "rank": 5
     }
    ]
@@ -103,7 +103,7 @@
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
      "reviewAvg": 4.39,
-     "reviewCount": 217,
+     "reviewCount": 218,
      "shop": "BELLEMOND(ベルモンド)公式",
      "rank": 2
     },
@@ -136,14 +136,14 @@
     {
      "label": "汗拭きシート（無香料）",
      "note": "現場の必需品。無香料がマナー",
-     "name": "マンダム ギャツビー アイスデオドラント ボディペーパー 無香料 徳用 30枚 （医薬部外品）",
-     "price": 327,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/matsukiyo/cabinet/d0069/4902806112856_1.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsukiyo%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入)",
+     "price": 697,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/856/4902806112856.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
-     "reviewAvg": 5,
+     "reviewAvg": 4,
      "reviewCount": 3,
-     "shop": "マツモトキヨシ楽天市場店",
+     "shop": "楽天24",
      "rank": 5
     }
    ]
