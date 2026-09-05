@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-05",
- "updatedAt": "2026-09-04T22:46:08.494Z",
+ "updated": "2026-09-06",
+ "updatedAt": "2026-09-05T22:38:07.641Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -9,6 +9,19 @@
    "title": "お菓子の定番",
    "lead": "配りやすい個包装・常温OK・手が汚れないが鉄則。メイクと衣装を守りながらみんなに行き渡る定番のお菓子です。",
    "items": [
+    {
+     "label": "個包装の焼き菓子",
+     "note": "配りやすく衣装を汚さない大定番",
+     "name": "9/1 10:00〜9/11 14:00まで＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア ",
+     "price": 1188,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/pointup/imgrc0125066786.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 4.75,
+     "reviewCount": 1394,
+     "shop": "シュクレイ楽天市場店",
+     "rank": 1
+    },
     {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
@@ -20,19 +33,6 @@
      "reviewAvg": 4.55,
      "reviewCount": 511,
      "shop": "マヌカハニーのコンビタ 公式店",
-     "rank": 1
-    },
-    {
-     "label": "個包装の焼き菓子",
-     "note": "配りやすく衣装を汚さない大定番",
-     "name": "神戸浪漫 神戸トラッドクッキー",
-     "price": 1740,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/friend-gift/cabinet/renewal/re2022/imgrc0085660771.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffriend-gift%2F10031457%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 4.32,
-     "reviewCount": 221,
-     "shop": "暮らしのギフト 「Lumiere」",
      "rank": 2
     },
     {
@@ -51,14 +51,14 @@
     {
      "label": "ミンティア・タブレット",
      "note": "かさばらない気配り枠",
-     "name": "ミンティア コールドスマッシュ 7g（50粒入）×10個 まとめ買い",
-     "price": 1188,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/quickfactory/cabinet/sweets/07236167/coldsmash_10.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fquickfactory%2Fr007573%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "アサヒグループ食品 ミンティア ブリーズ シャイニーピンク 30粒 8個 セット まとめ買い ミント タブレット",
+     "price": 1780,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tigtig/cabinet/260905/2990-001608-w1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftigtig%2F2990-001608%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2&tag=sashiire01-22",
-     "reviewAvg": 4.9,
-     "reviewCount": 10,
-     "shop": "クイックファクトリー",
+     "reviewAvg": 4.74,
+     "reviewCount": 35,
+     "shop": "TIGTIG 楽天市場店",
      "rank": 4
     },
     {
@@ -123,14 +123,14 @@
     {
      "label": "塩分チャージタブレット",
      "note": "夏の屋外・イベントの熱中症対策",
-     "name": "カバヤ 塩分チャージタブレッツ 3種240g 4種320g アソート 選べる 約78～104粒 個包装 塩タブレット 塩",
-     "price": 1680,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shopk-net/cabinet/00000.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopk-net%2Fx001794y3h%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "カバヤ 81g × 3袋 / 個別包装 塩分チャージタブレット 塩タブレット 塩分 塩分補給 塩分チャージ 熱中症防止 ",
+     "price": 500,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/livlan/cabinet/syouhin/okasi/enbuntyaji/t3erabu.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Flivlan%2F1004-000257%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%A1%A9%E5%88%86%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%20%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88&tag=sashiire01-22",
-     "reviewAvg": 4.63,
-     "reviewCount": 19,
-     "shop": "まいにち用度/備品と消耗品",
+     "reviewAvg": 4.79,
+     "reviewCount": 33,
+     "shop": "ホリダシホンポ 楽天市場店",
      "rank": 4
     },
     {
