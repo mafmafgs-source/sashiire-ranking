@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-08",
- "updatedAt": "2026-09-07T23:16:28.316Z",
+ "updated": "2026-09-09",
+ "updatedAt": "2026-09-08T23:11:16.181Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -18,7 +18,7 @@
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
      "reviewAvg": 4.75,
-     "reviewCount": 1394,
+     "reviewCount": 1395,
      "shop": "シュクレイ楽天市場店",
      "rank": 1
     },
@@ -36,6 +36,19 @@
      "rank": 2
     },
     {
+     "label": "ゼリー飲料",
+     "note": "メイクを崩さず栄養補給できる",
+     "name": "ゼリー飲料 飲むゼリー ゼリー 詰め合わせ ミニッツメイド ぷるんぷるん Qoo マスカット もも みかん リンゴ 12",
+     "price": 1200,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/490210-qchoice-ccw1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F490210-qchoice-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
+     "reviewAvg": 4.66,
+     "reviewCount": 38,
+     "shop": "健楽美生活館",
+     "rank": 3
+    },
+    {
      "label": "個包装ラムネ",
      "note": "ブドウ糖補給。長丁場の集中力に",
      "name": "本州 星形ラムネと金平糖 個包装 500g （小袋 約56個）スター トゥインクル 小分け 配る 星 ラムネ こんぺいと",
@@ -46,19 +59,6 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 3
-    },
-    {
-     "label": "ゼリー飲料",
-     "note": "メイクを崩さず栄養補給できる",
-     "name": "ゼリー飲料 ミニッツメイドぷるんぷるんQoo ぶどう 朝食 ゼリー 125gパウチ 6本×1ケース 計:6本 子供ゼリー",
-     "price": 1300,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/4902102100526-ccw1.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F4902102100526-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 3,
-     "shop": "健楽美生活館",
      "rank": 4
     },
     {
@@ -136,14 +136,14 @@
     {
      "label": "汗拭きシート（無香料）",
      "note": "現場の必需品。無香料がマナー",
-     "name": "ギャツビー アイスデオドラント ボディペーパー 無香料(30枚入)",
-     "price": 662,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/856/4902806112856.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "マンダム ギャツビー アイスデオドラント ボディペーパー 無香料 徳用 30枚 （医薬部外品）",
+     "price": 327,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/matsukiyo/cabinet/d0069/4902806112856_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsukiyo%2F4902806112856%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%97%E6%8B%AD%E3%81%8D%E3%82%B7%E3%83%BC%E3%83%88%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
-     "reviewAvg": 4,
+     "reviewAvg": 5,
      "reviewCount": 3,
-     "shop": "楽天24",
+     "shop": "マツモトキヨシ楽天市場店",
      "rank": 5
     }
    ]
