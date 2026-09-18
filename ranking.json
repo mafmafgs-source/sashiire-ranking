@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-18",
- "updatedAt": "2026-09-17T23:21:40.742Z",
+ "updated": "2026-09-19",
+ "updatedAt": "2026-09-18T23:00:41.795Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -12,7 +12,7 @@
     {
      "label": "個包装の焼き菓子",
      "note": "配りやすく衣装を汚さない大定番",
-     "name": "9/11 17:00〜9/18 9:59まで＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア ",
+     "name": "9/18 13:00〜9/24 1:59まで＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア ",
      "price": 1188,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/pointup/imgrc0125066786.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
@@ -95,9 +95,22 @@
      "rank": 1
     },
     {
+     "label": "冷感タオル",
+     "note": "夏の屋外撮影の救世主",
+     "name": "＼2時間限定半額クーポン｜マラソン19日20時〜／ クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 98",
+     "price": 1798,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b11/b1164_001_v10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
+     "reviewAvg": 4.39,
+     "reviewCount": 219,
+     "shop": "BELLEMOND(ベルモンド)公式",
+     "rank": 2
+    },
+    {
      "label": "蒸気でホットアイマスク",
      "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
-     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
+     "name": "≪2個購入で500円OFF/3個購入で1000円OFFクーポン25日迄≫ めぐりズム ホットアイマスク 蒸気めぐるアイマ",
      "price": 1650,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
      "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
@@ -105,7 +118,7 @@
      "reviewAvg": 4.69,
      "reviewCount": 211,
      "shop": "miui",
-     "rank": 2
+     "rank": 3
     },
     {
      "label": "塩分チャージタブレット",
@@ -118,19 +131,6 @@
      "reviewAvg": 4.63,
      "reviewCount": 19,
      "shop": "まいにち用度/備品と消耗品",
-     "rank": 3
-    },
-    {
-     "label": "冷感タオル",
-     "note": "夏の屋外撮影の救世主",
-     "name": "冷感タオル 瞬冷 スポーツタオル 熱中症対策",
-     "price": 330,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fheimin/cabinet/sonohoka/yy0060/0436-00.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffheimin%2Flt-f-0086%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 3.14,
-     "reviewCount": 7,
-     "shop": "MINAKO WORTH",
      "rank": 4
     },
     {
