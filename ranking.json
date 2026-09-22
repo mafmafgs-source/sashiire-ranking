@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-22",
- "updatedAt": "2026-09-21T23:48:56.979Z",
+ "updated": "2026-09-23",
+ "updatedAt": "2026-09-22T23:29:19.615Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -23,6 +23,19 @@
      "rank": 1
     },
     {
+     "label": "ゼリー飲料",
+     "note": "メイクを崩さず栄養補給できる",
+     "name": "ゼリー飲料 飲むゼリー ゼリー 詰め合わせ ミニッツメイド ぷるんぷるん Qoo マスカット もも みかん リンゴ 12",
+     "price": 1200,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/490210-qchoice-ccw1.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F490210-qchoice-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
+     "reviewAvg": 4.66,
+     "reviewCount": 38,
+     "shop": "健楽美生活館",
+     "rank": 2
+    },
+    {
      "label": "個包装ラムネ",
      "note": "ブドウ糖補給。長丁場の集中力に",
      "name": "本州 星形ラムネと金平糖 個包装 500g （小袋 約56個）スター トゥインクル 小分け 配る 星 ラムネ こんぺいと",
@@ -33,19 +46,6 @@
      "reviewAvg": 4.89,
      "reviewCount": 9,
      "shop": "おやつのへや 楽天市場店",
-     "rank": 2
-    },
-    {
-     "label": "ゼリー飲料",
-     "note": "メイクを崩さず栄養補給できる",
-     "name": "ゼリー飲料 ミニッツメイドぷるんぷるんQoo ぶどう 朝食 ゼリー 125gパウチ 6本×1ケース 計:6本 子供ゼリー",
-     "price": 1300,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/seles-eshop/cabinet/topimg/4902102100526-ccw1.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fseles-eshop%2F4902102100526-ccw1%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%BC%E3%83%AA%E3%83%BC%E9%A3%B2%E6%96%99%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84&tag=sashiire01-22",
-     "reviewAvg": 4,
-     "reviewCount": 3,
-     "shop": "健楽美生活館",
      "rank": 3
     },
     {
@@ -95,6 +95,19 @@
      "rank": 1
     },
     {
+     "label": "冷感タオル",
+     "note": "夏の屋外撮影の救世主",
+     "name": "＼限定10％OFFクーポン24日01:59まで／ クールタオル 3枚セット ひんやりタオル 冷感タオル UV 約 98％",
+     "price": 1798,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b11/b1164_001_v10.jpg?_ex=128x128",
+     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1164coolt%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
+     "reviewAvg": 4.39,
+     "reviewCount": 219,
+     "shop": "BELLEMOND(ベルモンド)公式",
+     "rank": 2
+    },
+    {
      "label": "蒸気でホットアイマスク",
      "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
      "name": "≪2個購入で500円OFF/3個購入で1000円OFFクーポン25日迄≫ めぐりズム ホットアイマスク 蒸気めぐるアイマ",
@@ -105,19 +118,6 @@
      "reviewAvg": 4.69,
      "reviewCount": 211,
      "shop": "miui",
-     "rank": 2
-    },
-    {
-     "label": "冷感タオル",
-     "note": "夏の屋外撮影の救世主",
-     "name": "＼最大30%OFFクーポン／ ひんやりタオル 冷却タオル スポーツ 冷感タオル クールタオル ランニング マラソン ジョ",
-     "price": 1000,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/funtastic/cabinet/07347997/09234045/sprz003-t_1-2.jpg?_ex=128x128",
-     "rakutenUrl": "https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuntastic%2Fsprz003%2F%3Frafcid%3Dwsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 4.49,
-     "reviewCount": 197,
-     "shop": "BeHe(ベーエ)",
      "rank": 3
     },
     {
