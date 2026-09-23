@@ -18,6 +18,7 @@
     "_comment": "みんなが探している差し入れ。併せPlanner・差し入れサイトの検索語の集計（3人以上・運営者が非表示にした語は除外済み）から各語の代表商品を選ぶ。enabled=false で枠ごと止まる",
     "enabled": true,
     "url": "https://jyounetsu.site/awase/api/?sr=1",
+    "ngUrl": "https://jyounetsu.site/awase/api/?ng=1",
     "title": "みんなが探している差し入れ",
     "lead": "併せPlanner と このサイトの「差し入れを探す」で、多くの人が検索した差し入れです（直近90日・3人以上）。",
     "max": 5,

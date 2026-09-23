@@ -132,11 +132,49 @@ function b64u(str){
   for(let i=0;i<bytes.length;i+=0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i+0x8000));
   return btoa(bin).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
 }
-function doSearch(term, record){
+/* 禁止語（未成年も使うため：成人向け・酒・たばこ・医薬品など）。正本は jyounetsu.site/awase/api/ngwords.json（併せPlanner・毎朝のランキング生成と共通）。
+   入力させない・表示しない。一覧を読めないときは検索させず、みんなのランキングも出さない（安全側） */
+let ngData = null, ngP = null, lastData = null;
+function ngNorm(s){
+  return String(s||'').normalize('NFKC').toLowerCase()
+    .replace(/[\u30a1-\u30f6]/g, c=>String.fromCharCode(c.charCodeAt(0)-0x60))
+    .replace(/[\s\u3000・\-ー_]+/g, '');
+}
+function ngLoad(){
+  if(ngData) return Promise.resolve(ngData);
+  if(!ngP){
+    ngP = fetch(SQ_API + '?ng=1', {cache:'no-cache'})
+      .then(r=>{ if(!r.ok) throw new Error('ng '+r.status); return r.json(); })
+      .then(d=>{
+        const n = a=>(a||[]).map(ngNorm).filter(Boolean);
+        if(!d || !d.words || !d.words.length) throw new Error('ng empty');
+        ngData = {words:n(d.words), exact:n(d.exact), allow:n(d.allow)};
+        if(lastData) render(lastData);
+        loadChips();
+        return ngData;
+      })
+      .catch(err=>{ ngP = null; throw err; });
+  }
+  return ngP;
+}
+function ngHit(text){
+  if(!ngData) return true;
+  let k = ngNorm(text);
+  if(ngData.exact.includes(k)) return true;
+  ngData.allow.forEach(a=>{ k = k.split(a).join(''); });
+  return ngData.words.some(w=>k.includes(w));
+}
+async function doSearch(term, record){
   const el = document.getElementById('q');
   if(term==null) term = el.value; else el.value = term;
   term = String(term||'').trim().replace(/\s+/g,' ').slice(0,30);
   if(!term) return;
+  const box = document.getElementById('sres');
+  try{ await ngLoad(); }catch(err){ box.innerHTML = '<div class="sres">通信できないため、いまは検索できません。時間をおいてお試しください。</div>'; return; }
+  if(ngHit(term)){
+    box.innerHTML = '<div class="sres">この言葉では検索できません（未成年の方も使うため、お酒・たばこ・医薬品・成人向けの商品は扱っていません）。</div>';
+    return;
+  }
   if(record !== false){
     fetch(SQ_API, {method:'POST', headers:{'Content-Type':'text/plain'}, body:b64u(JSON.stringify({op:'sq', term}))}).catch(()=>{});
   }
@@ -148,16 +186,22 @@ function doSearch(term, record){
 }
 /* ランキングに載る前（翌朝の更新前）の言葉もチップで出す。押しただけでは数えない */
 function loadChips(){
+  if(!ngData) return;   // 禁止語の一覧を確認できるまで出さない
   fetch(SQ_API + '?sr=1', {cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{
-    const items = (d && d.items || []).slice(0,10);
+    const items = (d && d.items || []).filter(it=>!ngHit(it.t)).slice(0,10);
     document.getElementById('chips').innerHTML = items.map(it=>`<button class="chip" data-t="${esc(it.t)}" onclick="doSearch(this.dataset.t,false)">${esc(it.t)}</button>`).join('');
   }).catch(()=>{});
 }
-loadChips();
+ngLoad().catch(()=>{});
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function yen(n){ return Number(n||0).toLocaleString('ja-JP'); }
 
 function render(data){
+  lastData = data;
+  /* みんなが探している差し入れは、禁止語の一覧を確認できてから禁止語を除いて出す */
+  data = Object.assign({}, data, {categories: data.categories
+    .map(c=>c.community ? Object.assign({}, c, {items: ngData ? c.items.filter(it=>!ngHit(it.label) && !ngHit(it.name||'')).map((it,i)=>Object.assign({}, it, {rank:i+1})) : []}) : c)
+    .filter(c=>c.items.length)});
   document.getElementById('updated').textContent = `${data.updated} 更新（毎日自動更新）` + (data.mock ? '｜プレビュー用ダミーデータ' : '');
   document.getElementById('basis').textContent = data.basis || '';
   const app = document.getElementById('app');

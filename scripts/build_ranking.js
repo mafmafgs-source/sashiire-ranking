@@ -113,6 +113,7 @@ function pickItem(items, minReviewAvg, slot) {
     /* 用途違い（名入れギフト・記念品・業務用等）は商品名・キャッチコピーで除外 */
     const nameText = `${it.itemName || ''} ${it.catchcopy || ''}`;
     if (ban.some(b => nameText.includes(b))) continue;
+    if (NG && ngHit(nameText)) continue;   // 洋酒入りのお菓子などを、定番枠でも出さない
     return it;
   }
   return null;
@@ -148,7 +149,35 @@ async function fetchCommunityTerms() {
     return [];
   }
 }
-/* 検索語はユーザー入力なので、本体の除外語に加えて成人向け等の除外語でも商品名を確認する */
+/* 禁止語（未成年も使うため：成人向け・酒・たばこ・医薬品など）。正本は jyounetsu.site/awase/api/ngwords.json
+   （併せPlanner・差し入れサイトと共通）。読めないときは「みんなが探している差し入れ」枠を出さない（安全側） */
+let NG = null;
+async function loadNg() {
+  const url = process.env.NG_URL || COMMUNITY.ngUrl;
+  if (!url) throw new Error('community.ngUrl が未設定');
+  let d;
+  if (/^https?:/.test(url)) {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 15000);
+    const res = await fetch(url, { signal: ctl.signal, headers: { 'User-Agent': 'sashiire-ranking/1.0' } });
+    clearTimeout(t);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    d = await res.json();
+  } else {
+    d = JSON.parse(fs.readFileSync(url, 'utf8'));
+  }
+  const n = a => (a || []).map(norm).filter(Boolean);
+  if (!d || !d.words || !d.words.length) throw new Error('禁止語の一覧が空');
+  NG = { words: n(d.words), exact: n(d.exact), allow: n(d.allow) };
+}
+function ngHit(text) {
+  if (!NG) return true;
+  let k = norm(text);
+  if (NG.exact.includes(k)) return true;
+  NG.allow.forEach(a => { k = k.split(a).join(''); });
+  return NG.words.some(w => k.includes(w));
+}
+/* 検索語はユーザー入力なので、本体の除外語・追加の除外語・禁止語で商品名を確認する */
 function communityPick(items, term) {
   const key = norm(term.split(/\s+/)[0]);
   const ban = (config.rules.banWords || []).concat(COMMUNITY.banWords || []);
@@ -159,12 +188,15 @@ function communityPick(items, term) {
     if (key && !text.includes(key)) continue;           // 関連性ガード（検索語の先頭語が含まれること）
     const nameText = `${it.itemName || ''} ${it.catchcopy || ''}`;
     if (ban.some(b => nameText.includes(b) || norm(nameText).includes(norm(b)))) continue;
+    if (ngHit(nameText)) continue;
     return it;
   }
   return null;
 }
 async function buildCommunity() {
-  const terms = await fetchCommunityTerms();
+  if (!COMMUNITY.enabled) return null;
+  if (!NG) { console.warn('WARN: 禁止語の一覧を読めないため「みんなが探している差し入れ」は出しません'); return null; }
+  const terms = (await fetchCommunityTerms()).filter(x => !ngHit(x.t));
   if (!terms.length) return null;
   const max = COMMUNITY.max || 5;
   const items = [];
@@ -227,6 +259,9 @@ async function main() {
     mock: MOCK || undefined,
     categories: []
   };
+
+  /* 禁止語の一覧（定番枠の商品名チェックにも使う。読めないときは定番枠は従来どおり、みんなの枠は出さない） */
+  if (COMMUNITY.enabled) { try { await loadNg(); } catch (err) { console.warn('WARN: 禁止語の一覧を読めませんでした:', err.message); } }
 
   for (const cat of config.categories) {
     const slots = cat.slots.filter(s => !s.months || s.months.includes(month));
