@@ -63,6 +63,18 @@ h2{font-size:19px; font-weight:800; margin:34px 0 4px; border-left:4px solid var
 }
 footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 #loading{color:var(--sub); text-align:center; padding:40px 0;}
+/* 差し入れを探す（検索語は「みんなが探している差し入れ」の集計に使う） */
+.search{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-top:18px;}
+.search h3{font-size:14.5px; margin-bottom:8px;}
+.srow{display:flex; gap:8px;}
+.srow input{flex:1; min-width:0; font:inherit; font-size:15px; padding:9px 12px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--tx);}
+.srow button{font:inherit; font-size:13.5px; font-weight:700; padding:0 16px; border-radius:6px; border:1px solid var(--tx); background:var(--tx); color:#fff; cursor:pointer;}
+.sres{margin-top:10px; font-size:13.5px; background:var(--acbg); border-radius:8px; padding:10px 12px;}
+.sres .btns{margin-top:8px;}
+.snote{font-size:11.5px; color:var(--sub); margin-top:8px;}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+.chip{font:inherit; font-size:12.5px; padding:4px 11px; border-radius:99px; border:1px solid var(--line); background:var(--card); color:var(--tx); cursor:pointer;}
+.ppl{display:inline-block; font-size:11px; font-weight:700; color:var(--tx); background:var(--acbg); border-radius:99px; padding:1px 8px; margin-top:4px;}
 </style>
 </head>
 <body>
@@ -71,6 +83,16 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
   <div class="upd" id="updated">読み込み中…</div>
   <div class="pr">本ページは広告（アフィリエイトリンク）を含みます</div>
   <p class="intro">併せ・撮影現場への差し入れ、何を持っていけば喜ばれる？——現場目線の条件で絞り込んだ定番だけを、売れ筋データから毎日自動更新で紹介します。</p>
+  <div class="search">
+    <h3>差し入れを探す</h3>
+    <div class="srow">
+      <input type="text" id="q" maxlength="30" placeholder="例：ホットアイマスク、個包装のお菓子" enterkeyhint="search" onkeydown="if(event.key==='Enter')doSearch()">
+      <button onclick="doSearch()">探す</button>
+    </div>
+    <div id="sres"></div>
+    <div class="chips" id="chips"></div>
+    <p class="snote">検索した言葉は、個人と結びつかない形で「みんなが探している差し入れ」の集計に使います（3人以上が探した言葉だけを掲載）。</p>
+  </div>
 </header>
 
 <main id="app"><div id="loading">ランキングを読み込んでいます…</div></main>
@@ -93,11 +115,45 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 
 <footer>
   <p id="basis"></p>
-  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。楽天リンクは楽天アフィリエイトを利用しています。掲載順は自動集計によるもので、紹介料率による並べ替えは行っていません。</p>
+  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。楽天リンクは楽天アフィリエイトを利用しています。掲載順は自動集計によるもので（定番＝レビュー件数順、みんなが探している差し入れ＝検索した人数順）、紹介料率による並べ替えは行っていません。</p>
 </footer>
 
 <script>
 const DATA_URL = 'https://mafmafgs-source.github.io/sashiire-ranking/ranking.json';
+/* 検索語の集計（併せPlanner と共通・jyounetsu.site/awase/api/） */
+const SQ_API = 'https://jyounetsu.site/awase/api/';
+const AMAZON_TAG = 'sashiire01-22';
+const MOSHIMO_RAKUTEN = 'https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=';
+function amazonSearchUrl(q){ return 'https://www.amazon.co.jp/s?k=' + encodeURIComponent(q) + '&tag=' + AMAZON_TAG; }
+function rakutenSearchUrl(q){ return MOSHIMO_RAKUTEN + encodeURIComponent('https://search.rakuten.co.jp/search/mall/' + encodeURIComponent(q) + '/'); }
+/* POST 本文は base64url(JSON)・text/plain（ロリポップの WAF とプリフライト対策。併せPlanner と同じ） */
+function b64u(str){
+  const bytes = new TextEncoder().encode(str); let bin = '';
+  for(let i=0;i<bytes.length;i+=0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i+0x8000));
+  return btoa(bin).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+}
+function doSearch(term, record){
+  const el = document.getElementById('q');
+  if(term==null) term = el.value; else el.value = term;
+  term = String(term||'').trim().replace(/\s+/g,' ').slice(0,30);
+  if(!term) return;
+  if(record !== false){
+    fetch(SQ_API, {method:'POST', headers:{'Content-Type':'text/plain'}, body:b64u(JSON.stringify({op:'sq', term}))}).catch(()=>{});
+  }
+  document.getElementById('sres').innerHTML = `<div class="sres">「<b>${esc(term)}</b>」を探す
+    <div class="btns">
+      <a class="btn" href="${esc(rakutenSearchUrl(term))}" target="_blank" rel="sponsored noopener">楽天で探す</a>
+      <a class="btn amz" href="${esc(amazonSearchUrl(term))}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
+    </div></div>`;
+}
+/* ランキングに載る前（翌朝の更新前）の言葉もチップで出す。押しただけでは数えない */
+function loadChips(){
+  fetch(SQ_API + '?sr=1', {cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{
+    const items = (d && d.items || []).slice(0,10);
+    document.getElementById('chips').innerHTML = items.map(it=>`<button class="chip" data-t="${esc(it.t)}" onclick="doSearch(this.dataset.t,false)">${esc(it.t)}</button>`).join('');
+  }).catch(()=>{});
+}
+loadChips();
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function yen(n){ return Number(n||0).toLocaleString('ja-JP'); }
 
@@ -116,7 +172,7 @@ function render(data){
           : `<div class="thumb ph">No Image</div>`}
         <div class="body">
           <div class="label">${esc(it.label)}</div>
-          <div class="note">${esc(it.note)}</div>
+          ${cat.community ? `<div class="ppl">${esc(it.note)}</div>` : `<div class="note">${esc(it.note)}</div>`}
           ${it.name?`<div class="pname">${esc(it.name)}</div>`:''}
           <div class="meta"><b>${yen(it.price)}円</b><span style="font-size:11px">（楽天）</span>
             ${it.reviewCount?`<span class="rv">レビュー ${esc(it.reviewAvg)}（${yen(it.reviewCount)}件）</span>`:''}
