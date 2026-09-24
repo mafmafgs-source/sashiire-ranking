@@ -123,9 +123,10 @@ const DATA_URL = 'https://mafmafgs-source.github.io/sashiire-ranking/ranking.jso
 /* 検索語の集計（併せーる と共通・jyounetsu.site/awase/api/） */
 const SQ_API = 'https://jyounetsu.site/awase/api/';
 const AMAZON_TAG = 'sashiire01-22';
-const MOSHIMO_RAKUTEN = 'https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=';
+/* 楽天は本家アフィリエイト（すべて https）。もしも経由は途中に http:// の転送があり iPhone の Chrome で止まるため 9/24 にやめた */
+const RAKUTEN_AFF_ID = '569e8585.c4959bff.569e8586.775f3b01';
 function amazonSearchUrl(q){ return 'https://www.amazon.co.jp/s?k=' + encodeURIComponent(q) + '&tag=' + AMAZON_TAG; }
-function rakutenSearchUrl(q){ return MOSHIMO_RAKUTEN + encodeURIComponent('https://search.rakuten.co.jp/search/mall/' + encodeURIComponent(q) + '/'); }
+function rakutenSearchUrl(q){ return 'https://hb.afl.rakuten.co.jp/hgc/' + RAKUTEN_AFF_ID + '/?pc=' + encodeURIComponent('https://search.rakuten.co.jp/search/mall/' + encodeURIComponent(q) + '/') + '&link_type=hybrid_url'; }
 /* POST 本文は base64url(JSON)・text/plain（ロリポップの WAF とプリフライト対策。併せーる と同じ） */
 function b64u(str){
   const bytes = new TextEncoder().encode(str); let bin = '';

@@ -4,8 +4,8 @@
   "rakutenAffiliateId": "569e8585.c4959bff.569e8586.775f3b01",
   "siteOrigin": "https://jyounetsu.site",
   "moshimo": {
-    "_comment": "もしもアフィリエイト経由の楽天リンク（設定済み＝本家IDより優先される。空にすると本家rakutenAffiliateIdに戻る）",
-    "aId": "1500380",
+    "_comment": "もしもアフィリエイト経由の楽天リンク。9/24 に空にして本家 rakutenAffiliateId に切り替え（もしも経由は途中に http:// の転送があり iPhone の Chrome で止まるため）。戻すなら aId=1500380 pId=54 pcId=54 plId=27059",
+    "aId": "",
     "pId": "54",
     "pcId": "54",
     "plId": "27059"
