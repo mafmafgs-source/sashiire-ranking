@@ -115,7 +115,7 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 
 <footer>
   <p id="basis"></p>
-  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。楽天リンクは楽天アフィリエイトを利用しています。掲載順は自動集計によるもので（定番＝レビュー件数順、みんなが探している差し入れ＝検索した人数順）、紹介料率による並べ替えは行っていません。</p>
+  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。掲載順は自動集計によるもので（定番＝レビュー件数順、みんなが探している差し入れ＝検索した人数順）、紹介料率による並べ替えは行っていません。</p>
 </footer>
 
 <script>
@@ -181,7 +181,6 @@ async function doSearch(term, record){
   }
   document.getElementById('sres').innerHTML = `<div class="sres">「<b>${esc(term)}</b>」を探す
     <div class="btns">
-      <a class="btn" href="${esc(rakutenSearchUrl(term))}" target="_blank" rel="sponsored noopener">楽天で探す</a>
       <a class="btn amz" href="${esc(amazonSearchUrl(term))}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
     </div></div>`;
 }
@@ -219,11 +218,10 @@ function render(data){
           <div class="label">${esc(it.label)}</div>
           ${cat.community ? `<div class="ppl">${esc(it.note)}</div>` : `<div class="note">${esc(it.note)}</div>`}
           ${it.name?`<div class="pname">${esc(it.name)}</div>`:''}
-          <div class="meta"><b>${yen(it.price)}円</b><span style="font-size:11px">（楽天）</span>
+          <div class="meta"><b>${yen(it.price)}円</b><span style="font-size:11px">（参考価格）</span>
             ${it.reviewCount?`<span class="rv">レビュー ${esc(it.reviewAvg)}（${yen(it.reviewCount)}件）</span>`:''}
           </div>
           <div class="btns">
-            <a class="btn" href="${esc(it.rakutenUrl)}" target="_blank" rel="sponsored noopener">楽天で見る</a>
             <a class="btn amz" href="${esc(it.amazonUrl)}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
           </div>
         </div>
