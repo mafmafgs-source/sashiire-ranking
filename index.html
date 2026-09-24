@@ -111,7 +111,7 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
   <p style="margin-top:8px">季節でも入れ替えています（夏：塩分・冷感／冬：カイロ・のど飴。チョコは溶けるので夏は外す、など）。</p>
 </div>
 
-<a class="cta" href="/awase/">併せの募集・準備には「併せPlanner」（無料）</a>
+<a class="cta" href="/awase/">併せの募集・準備には「併せーる」（無料）</a>
 
 <footer>
   <p id="basis"></p>
@@ -120,19 +120,19 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 
 <script>
 const DATA_URL = 'https://mafmafgs-source.github.io/sashiire-ranking/ranking.json';
-/* 検索語の集計（併せPlanner と共通・jyounetsu.site/awase/api/） */
+/* 検索語の集計（併せーる と共通・jyounetsu.site/awase/api/） */
 const SQ_API = 'https://jyounetsu.site/awase/api/';
 const AMAZON_TAG = 'sashiire01-22';
 const MOSHIMO_RAKUTEN = 'https://af.moshimo.com/af/c/click?a_id=1500380&p_id=54&pc_id=54&pl_id=27059&url=';
 function amazonSearchUrl(q){ return 'https://www.amazon.co.jp/s?k=' + encodeURIComponent(q) + '&tag=' + AMAZON_TAG; }
 function rakutenSearchUrl(q){ return MOSHIMO_RAKUTEN + encodeURIComponent('https://search.rakuten.co.jp/search/mall/' + encodeURIComponent(q) + '/'); }
-/* POST 本文は base64url(JSON)・text/plain（ロリポップの WAF とプリフライト対策。併せPlanner と同じ） */
+/* POST 本文は base64url(JSON)・text/plain（ロリポップの WAF とプリフライト対策。併せーる と同じ） */
 function b64u(str){
   const bytes = new TextEncoder().encode(str); let bin = '';
   for(let i=0;i<bytes.length;i+=0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i+0x8000));
   return btoa(bin).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
 }
-/* 禁止語（未成年も使うため：成人向け・酒・たばこ・医薬品など）。正本は jyounetsu.site/awase/api/ngwords.json（併せPlanner・毎朝のランキング生成と共通）。
+/* 禁止語（未成年も使うため：成人向け・酒・たばこ・医薬品など）。正本は jyounetsu.site/awase/api/ngwords.json（併せーる・毎朝のランキング生成と共通）。
    入力させない・表示しない。一覧を読めないときは検索させず、みんなのランキングも出さない（安全側） */
 let ngData = null, ngP = null, lastData = null;
 function ngNorm(s){

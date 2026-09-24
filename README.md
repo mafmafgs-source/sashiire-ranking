@@ -42,4 +42,4 @@ node scripts/build_ranking.js --mock
 - 商品の入れ替え・追加は **config.json の slots を編集するだけ**（コードは触らない）
 - 変な商品が紛れたら: その枠に `must` を足すか `rules.banWords` に追加
 - Actionsが失敗しても前回のranking.jsonが残るのでページは壊れない（更新日表示で気づける）
-- 将来: クリック実測ランキング／「もらって嬉しかった」投票、併せPlannerアプリの忘れ物タブからranking.jsonを読む統合
+- 将来: クリック実測ランキング／「もらって嬉しかった」投票、併せーるアプリの忘れ物タブからranking.jsonを読む統合
