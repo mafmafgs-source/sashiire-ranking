@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-26",
- "updatedAt": "2026-09-25T23:48:21.034Z",
+ "updatedAt": "2026-09-26T11:39:26.635Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -36,6 +36,19 @@
      "rank": 2
     },
     {
+     "label": "一口ようかん",
+     "note": "常温で日持ち。手早くエネルギー補給",
+     "name": "保存用 一口羊羹 50g×10本 保存食 羊羹 ようかん ミニ羊羹 非常食 常温保存 備蓄 食料 和 スイーツ 一口サイ",
+     "price": 1598,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/wide02/cabinet/pn70000-30/79267-1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rhyqo.17r0l3c3.g00rhyqo.17r0m3e6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide02%2F79267-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide02%2Fi%2F10021837%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%B8%80%E5%8F%A3%E3%82%88%E3%81%86%E3%81%8B%E3%82%93%20%E5%80%8B%E5%8C%85%E8%A3%85&tag=sashiire01-22",
+     "reviewAvg": 4.8,
+     "reviewCount": 5,
+     "shop": "通販ライフ",
+     "rank": 3
+    },
+    {
      "label": "ゼリー飲料",
      "note": "メイクを崩さず栄養補給できる",
      "name": "ゼリー飲料 ミニッツメイドぷるんぷるんQoo ぶどう 朝食 ゼリー 125gパウチ 6本×1ケース 計:6本 子供ゼリー",
@@ -46,7 +59,20 @@
      "reviewAvg": 4,
      "reviewCount": 3,
      "shop": "健楽美生活館",
-     "rank": 3
+     "rank": 4
+    },
+    {
+     "label": "個包装おせんべい",
+     "note": "甘いものが苦手な人にも配れる",
+     "name": "柳月 鮭ぶし丸 20袋入 北海道 お土産 せんべい お煎餅 煎餅 鮭節 さけ おつまみ 和菓子 スイーツ お菓子 銘菓 ",
+     "price": 1600,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tidoriya/cabinet/ryugetsu/sake/imgrc0117162075.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tcr3o.17r0l41a.g00tcr3o.17r0m4bb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftidoriya%2F4513316008586%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftidoriya%2Fi%2F10010756%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 5,
+     "reviewCount": 3,
+     "shop": "souvenirshop ちどりや",
+     "rank": 5
     },
     {
      "label": "個包装のど飴",
@@ -59,7 +85,7 @@
      "reviewAvg": 3.5,
      "reviewCount": 2,
      "shop": "キャラショップPLAZA",
-     "rank": 4
+     "rank": 6
     },
     {
      "label": "ミンティア・タブレット",
@@ -72,7 +98,33 @@
      "reviewAvg": 4,
      "reviewCount": 1,
      "shop": "サンドラッグe-shop",
-     "rank": 5
+     "rank": 7
+    },
+    {
+     "label": "個包装グミ",
+     "note": "手が汚れず、つまみやすい人気枠",
+     "name": "やおきん ハロウィン 2種大袋 モンスターパーティーグミ 250g + モンスターマシュマロ 200g MONSTER ",
+     "price": 1980,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/psj1/cabinet/12349503/15-77-min.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tg47o.17r0l2ab.g00tg47o.17r0m530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpsj1%2F515-977-box%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpsj1%2Fi%2F10010425%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B0%E3%83%9F%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E5%A4%A7%E8%A2%8B&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "PrimeSellerJapan 楽天市場店",
+     "rank": 8
+    },
+    {
+     "label": "個包装クッキー",
+     "note": "崩れにくく、待ち時間のおやつに",
+     "name": "ありがとうクッキー 大袋 メッセージ お菓子 手土産 2026 お配り お世話になったお礼 退職 異動 転勤 引っ越し ",
+     "price": 1620,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cookiemail/cabinet/07355150/imgrc0133709176.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rydzo.17r0l2ea.g00rydzo.17r0mec5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookiemail%2Fmc45-bt-fl-k-bg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcookiemail%2Fi%2F10000728%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E5%A4%A7%E8%A2%8B&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "クッキーメール 楽天市場店",
+     "rank": 9
     }
    ]
   },
@@ -82,17 +134,30 @@
    "lead": "現場の「困った」に効く気配りグッズ。かさばらず、季節に合わせて選ぶと喜ばれ率が跳ね上がります。",
    "items": [
     {
-     "label": "冷感タオル",
-     "note": "夏の屋外撮影の救世主",
-     "name": "楽天ランキング1位 クールタオル SEA BREEZE 冷感タオル uvカット子供 首 キッズ 子ども 熱中症対策 冷却",
-     "price": 1320,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/renfrojapan/cabinet/08884911/cool/2026/szcug11ec_main-2new.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u0fco.17r0le31.g00u0fco.17r0m056/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenfrojapan%2Fsbcma10ec%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frenfrojapan%2Fi%2F10000004%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
-     "reviewAvg": 4.51,
-     "reviewCount": 811,
-     "shop": "RENFRO",
+     "label": "個包装マスク",
+     "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
+     "name": "マスク 不織布個包装 マスク 大人用・子供用 ふつう・小さめ プリーツ 立体 使い捨てマスク 白 黒 マスク 敏感肌 平",
+     "price": 1890,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shinko9868/cabinet/07693732/07715222/imgrc0086048444.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00thrzo.17r0l1ef.g00thrzo.17r0m0a7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinko9868%2Fmasks-003-100-mer%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshinko9868%2Fi%2F10000087%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E4%B8%8D%E7%B9%94%E5%B8%83&tag=sashiire01-22",
+     "reviewAvg": 3.87,
+     "reviewCount": 3245,
+     "shop": "新光ネット販売店",
      "rank": 1
+    },
+    {
+     "label": "個包装の入浴剤",
+     "note": "撮影後のごほうびに。かさばらず日持ちする",
+     "name": "入浴剤 詰め合わせ 個包装 おしゃれ かわいいパッケージ バスグッズ ばらまき プチギフト 小分け アソート 福袋 プレ",
+     "price": 1298,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mine-amenity/cabinet/220622shohin/84040419-1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rz2go.17r0lcc4.g00rz2go.17r0m155/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmine-amenity%2F10000011%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmine-amenity%2Fi%2F10000011%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%85%A5%E6%B5%B4%E5%89%A4%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 4.51,
+     "reviewCount": 352,
+     "shop": "ホテルアメニティ マイン通販",
+     "rank": 2
     },
     {
      "label": "蒸気でホットアイマスク",
@@ -105,7 +170,33 @@
      "reviewAvg": 4.69,
      "reviewCount": 211,
      "shop": "miui",
-     "rank": 2
+     "rank": 3
+    },
+    {
+     "label": "冷感タオル",
+     "note": "夏の屋外撮影の救世主",
+     "name": "＼最大30%OFFクーポン／ ひんやりタオル 冷却タオル スポーツ 冷感タオル クールタオル ランニング マラソン ジョ",
+     "price": 1000,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/funtastic/cabinet/07347997/09234045/sprz003-t_1-2.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tfamo.17r0l96c.g00tfamo.17r0m53c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuntastic%2Fsprz003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffuntastic%2Fi%2F10000320%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%86%B7%E6%84%9F%E3%82%BF%E3%82%AA%E3%83%AB&tag=sashiire01-22",
+     "reviewAvg": 4.49,
+     "reviewCount": 197,
+     "shop": "BeHe(ベーエ)",
+     "rank": 4
+    },
+    {
+     "label": "リップクリーム（無香料）",
+     "note": "乾燥するスタジオで。無香料がマナー",
+     "name": "ニベア モイスチャーリップ 無香料(3.9g)[リップクリーム]",
+     "price": 498,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/445/4901301739445.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r136o.17r0l37c.g00r136o.17r0m480/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fa002256000157%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F10122869%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%AA%E3%83%83%E3%83%97%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%20%E7%84%A1%E9%A6%99%E6%96%99&tag=sashiire01-22",
+     "reviewAvg": 4.5,
+     "reviewCount": 58,
+     "shop": "楽天24",
+     "rank": 5
     },
     {
      "label": "ハンドクリーム（無香料）",
@@ -118,7 +209,7 @@
      "reviewAvg": 4.41,
      "reviewCount": 34,
      "shop": "ネンリンラボ精油とコスメの専門店",
-     "rank": 3
+     "rank": 6
     },
     {
      "label": "塩分チャージタブレット",
@@ -131,7 +222,20 @@
      "reviewAvg": 4.76,
      "reviewCount": 34,
      "shop": "ホリダシホンポ 楽天市場店",
-     "rank": 4
+     "rank": 7
+    },
+    {
+     "label": "あぶらとり紙",
+     "note": "撮影の合間のテカリ対策。かさばらない",
+     "name": "マンダム ギャツビー あぶらとり紙 フィルムタイプ 75枚入×3個セット",
+     "price": 1380,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/j-seikatsu/cabinet/biiino/item/main-image-8/20250622123812_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u0z8o.17r0l5ae.g00u0z8o.17r0m43f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fj-seikatsu%2Fn3879-4902806128031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fj-seikatsu%2Fi%2F10003885%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%82%E3%81%B6%E3%82%89%E3%81%A8%E3%82%8A%E7%B4%99&tag=sashiire01-22",
+     "reviewAvg": 4.78,
+     "reviewCount": 9,
+     "shop": "じぶん生活館",
+     "rank": 8
     },
     {
      "label": "汗拭きシート（無香料）",
@@ -144,7 +248,20 @@
      "reviewAvg": 5,
      "reviewCount": 3,
      "shop": "マツモトキヨシ楽天市場店",
-     "rank": 5
+     "rank": 9
+    },
+    {
+     "label": "絆創膏（スリム）",
+     "note": "靴ずれ・小さなケガに。目立たない細めが便利",
+     "name": "あかぎれ保護バン 関節用 AGB20K 20マイイリ 絆創膏 25-3784-00 ニチバン 皮膚保護 フレキシブル 快",
+     "price": 311,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/matsuyoshi-web/cabinet/a011/00660351-01.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00t8jqo.17r0l897.g00t8jqo.17r0m199/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuyoshi-web%2F00660351%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmatsuyoshi-web%2Fi%2F10078289%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E7%B5%86%E5%89%B5%E8%86%8F%20%E3%82%B9%E3%83%AA%E3%83%A0&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "マツヨシ 楽天市場店",
+     "rank": 10
     }
    ]
   }
