@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-26",
- "updatedAt": "2026-09-26T11:39:26.635Z",
+ "updated": "2026-09-27",
+ "updatedAt": "2026-09-26T23:22:24.262Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -62,19 +62,6 @@
      "rank": 4
     },
     {
-     "label": "個包装おせんべい",
-     "note": "甘いものが苦手な人にも配れる",
-     "name": "柳月 鮭ぶし丸 20袋入 北海道 お土産 せんべい お煎餅 煎餅 鮭節 さけ おつまみ 和菓子 スイーツ お菓子 銘菓 ",
-     "price": 1600,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tidoriya/cabinet/ryugetsu/sake/imgrc0117162075.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tcr3o.17r0l41a.g00tcr3o.17r0m4bb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftidoriya%2F4513316008586%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftidoriya%2Fi%2F10010756%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
-     "reviewAvg": 5,
-     "reviewCount": 3,
-     "shop": "souvenirshop ちどりや",
-     "rank": 5
-    },
-    {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
      "name": "アサヒ バヤリース 至福の果実のど飴 フルーツ のど飴 4種 詰め合わせ 100粒 個包装 大容量",
@@ -85,7 +72,7 @@
      "reviewAvg": 3.5,
      "reviewCount": 2,
      "shop": "キャラショップPLAZA",
-     "rank": 6
+     "rank": 5
     },
     {
      "label": "ミンティア・タブレット",
@@ -98,7 +85,7 @@
      "reviewAvg": 4,
      "reviewCount": 1,
      "shop": "サンドラッグe-shop",
-     "rank": 7
+     "rank": 6
     },
     {
      "label": "個包装グミ",
@@ -111,15 +98,28 @@
      "reviewAvg": 0,
      "reviewCount": 0,
      "shop": "PrimeSellerJapan 楽天市場店",
+     "rank": 7
+    },
+    {
+     "label": "個包装おせんべい",
+     "note": "甘いものが苦手な人にも配れる",
+     "name": "山根製菓 お煎餅詰合せ あられ煎",
+     "price": 1121,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/friend-gift/cabinet/product/imgrc0090636099.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r41jo.17r0la69.g00r41jo.17r0mfc2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffriend-gift%2F10043296%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffriend-gift%2Fi%2F10043296%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "暮らしのギフト 「Lumiere」",
      "rank": 8
     },
     {
      "label": "個包装クッキー",
      "note": "崩れにくく、待ち時間のおやつに",
-     "name": "ありがとうクッキー 大袋 メッセージ お菓子 手土産 2026 お配り お世話になったお礼 退職 異動 転勤 引っ越し ",
+     "name": "お世話になりましたお菓子 大量 メッセージ クッキー 約40枚 退職 お菓子 お世話になりました 異動 転勤 感謝 大袋",
      "price": 1620,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cookiemail/cabinet/07355150/imgrc0133709176.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rydzo.17r0l2ea.g00rydzo.17r0mec5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookiemail%2Fmc45-bt-fl-k-bg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcookiemail%2Fi%2F10000728%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cookiemail/cabinet/07355150/imgrc0133709162.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rydzo.17r0l2ea.g00rydzo.17r0mec5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookiemail%2Fmc48-bt-fl-k-bg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcookiemail%2Fi%2F10000726%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E5%A4%A7%E8%A2%8B&tag=sashiire01-22",
      "reviewAvg": 0,
      "reviewCount": 0,
