@@ -75,6 +75,10 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
 .chip{font:inherit; font-size:12.5px; padding:4px 11px; border-radius:99px; border:1px solid var(--line); background:var(--card); color:var(--tx); cursor:pointer;}
 .ppl{display:inline-block; font-size:11px; font-weight:700; color:var(--tx); background:var(--acbg); border-radius:99px; padding:1px 8px; margin-top:4px;}
+/* 6 位以下（「もっと見る」で開く） */
+.more[hidden]{display:none;}
+.morebtn{display:block; width:100%; font:inherit; font-size:13.5px; font-weight:700; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--tx); cursor:pointer; margin:-2px 0 12px;}
+.morebtn:active{background:var(--acbg);}
 </style>
 </head>
 <body>
@@ -205,10 +209,8 @@ function render(data){
   document.getElementById('updated').textContent = `${data.updated} 更新（毎日自動更新）` + (data.mock ? '｜プレビュー用ダミーデータ' : '');
   document.getElementById('basis').textContent = data.basis || '';
   const app = document.getElementById('app');
-  app.innerHTML = data.categories.map(cat=>`
-    <h2>${esc(cat.title)}</h2>
-    <p class="lead">${esc(cat.lead)}</p>
-    ${cat.items.map(it=>`
+  /* 各枠 10 位まで。1〜5 位を表示し、6 位以下は「もっと見る」で開く（9/26） */
+  const itemHTML = (cat, it)=>`
       <div class="item">
         <div class="rank ${it.rank===1?'r1':''}">${it.rank}</div>
         ${it.image
@@ -225,8 +227,22 @@ function render(data){
             <a class="btn amz" href="${esc(it.amazonUrl)}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
           </div>
         </div>
-      </div>`).join('')}
-  `).join('');
+      </div>`;
+  app.innerHTML = data.categories.map(cat=>{
+    const head = cat.items.slice(0, 5), rest = cat.items.slice(5);
+    return `
+    <h2>${esc(cat.title)}</h2>
+    <p class="lead">${esc(cat.lead)}</p>
+    ${head.map(it=>itemHTML(cat, it)).join('')}
+    ${rest.length ? `<div class="more" hidden>${rest.map(it=>itemHTML(cat, it)).join('')}</div>
+    <button class="morebtn" data-n="${rest.length}" onclick="toggleMore(this)">もっと見る（${head.length+1}〜${cat.items.length}位）</button>` : ''}
+  `;}).join('');
+}
+function toggleMore(btn){
+  const box = btn.previousElementSibling;
+  const open = box.hasAttribute('hidden');
+  if(open) box.removeAttribute('hidden'); else box.setAttribute('hidden','');
+  btn.textContent = open ? '閉じる' : `もっと見る（6〜${5+Number(btn.dataset.n)}位）`;
 }
 
 /* 1ユーザー1日1フェッチのキャッシュ */

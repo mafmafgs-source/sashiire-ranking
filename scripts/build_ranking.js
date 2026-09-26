@@ -286,10 +286,11 @@ async function main() {
       if (!it) { console.warn(`WARN: "${slot.query}" は条件を満たす商品なし（スキップ）`); continue; }
       items.push(toItem(it, slot));
     }
-    /* 掲載順 = レビュー件数の降順（客観指標） */
+    /* 掲載順 = レビュー件数の降順（客観指標）。各枠 10 位まで（9/26・季節枠で 11 になる月があるため上位 10 件に切る） */
     items.sort((a, b) => b.reviewCount - a.reviewCount);
-    items.forEach((it, i) => { it.rank = i + 1; });
-    out.categories.push({ id: cat.id, title: cat.title, lead: cat.lead, items });
+    const top = items.slice(0, cat.max || 10);
+    top.forEach((it, i) => { it.rank = i + 1; });
+    out.categories.push({ id: cat.id, title: cat.title, lead: cat.lead, items: top });
   }
 
   /* みんなが探している差し入れ（あれば先頭に） */
