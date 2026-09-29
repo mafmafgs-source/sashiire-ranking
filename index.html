@@ -126,7 +126,8 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 const DATA_URL = 'https://mafmafgs-source.github.io/sashiire-ranking/ranking.json';
 /* 検索語の集計（併せーる と共通・jyounetsu.site/awase/api/） */
 const SQ_API = 'https://jyounetsu.site/awase/api/';
-const AMAZON_TAG = 'sashiire01-22';
+const AMAZON_TAG = 'hiroyukinak01-22';   // 9/29: 実績のある ID に統一
+function amzTag(u){ return String(u||'').replace(/([?&]tag=)[^&#]*/, '$1' + AMAZON_TAG); }
 /* 楽天は本家アフィリエイト（すべて https）。もしも経由は途中に http:// の転送があり iPhone の Chrome で止まるため 9/24 にやめた */
 const RAKUTEN_AFF_ID = '569e8585.c4959bff.569e8586.775f3b01';
 function amazonSearchUrl(q){ return 'https://www.amazon.co.jp/s?k=' + encodeURIComponent(q) + '&tag=' + AMAZON_TAG; }
@@ -224,7 +225,7 @@ function render(data){
             ${it.reviewCount?`<span class="rv">レビュー ${esc(it.reviewAvg)}（${yen(it.reviewCount)}件）</span>`:''}
           </div>
           <div class="btns">
-            <a class="btn amz" href="${esc(it.amazonUrl)}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
+            <a class="btn amz" href="${esc(amzTag(it.amazonUrl))}" target="_blank" rel="sponsored noopener">Amazonで探す</a>
           </div>
         </div>
       </div>`;
