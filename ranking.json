@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-28",
- "updatedAt": "2026-09-27T23:38:15.522Z",
+ "updated": "2026-09-29",
+ "updatedAt": "2026-09-29T00:48:45.646Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -49,19 +49,6 @@
      "rank": 3
     },
     {
-     "label": "一口ようかん",
-     "note": "常温で日持ち。手早くエネルギー補給",
-     "name": "保存用 一口羊羹 50g×10本 保存食 羊羹 ようかん ミニ羊羹 非常食 常温保存 備蓄 食料 和 スイーツ 一口サイ",
-     "price": 1598,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/wide02/cabinet/pn70000-30/79267-1.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rhyqo.17r0l3c3.g00rhyqo.17r0m3e6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide02%2F79267-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide02%2Fi%2F10021837%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%B8%80%E5%8F%A3%E3%82%88%E3%81%86%E3%81%8B%E3%82%93%20%E5%80%8B%E5%8C%85%E8%A3%85&tag=sashiire01-22",
-     "reviewAvg": 4.8,
-     "reviewCount": 5,
-     "shop": "通販ライフ",
-     "rank": 4
-    },
-    {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
      "name": "アサヒ バヤリース 至福の果実のど飴 フルーツ のど飴 4種 詰め合わせ 100粒 個包装 大容量",
@@ -72,7 +59,7 @@
      "reviewAvg": 3.5,
      "reviewCount": 2,
      "shop": "キャラショップPLAZA",
-     "rank": 5
+     "rank": 4
     },
     {
      "label": "ミンティア・タブレット",
@@ -85,7 +72,7 @@
      "reviewAvg": 4,
      "reviewCount": 1,
      "shop": "サンドラッグe-shop",
-     "rank": 6
+     "rank": 5
     },
     {
      "label": "個包装グミ",
@@ -98,32 +85,45 @@
      "reviewAvg": 0,
      "reviewCount": 0,
      "shop": "PrimeSellerJapan 楽天市場店",
-     "rank": 7
+     "rank": 6
     },
     {
      "label": "個包装おせんべい",
      "note": "甘いものが苦手な人にも配れる",
-     "name": "栗山米菓 HW 星たべよ ポケモン しお味 86g(約13個装入) { ハロウィン菓子 おせんべい 煎餅 ポケットモンス",
-     "price": 346,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/festival-plaza/cabinet/00762492/hwoks2026/imgrc0125595555.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00psiio.17r0lc72.g00psiio.17r0m7ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffestival-plaza%2Fhw-oks-109497-0723%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffestival-plaza%2Fi%2F10064764%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "山根製菓 お煎餅詰合せ あられ煎",
+     "price": 1121,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/friend-gift/cabinet/product/imgrc0090636099.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r41jo.17r0la69.g00r41jo.17r0mfc2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffriend-gift%2F10043296%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffriend-gift%2Fi%2F10043296%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=sashiire01-22",
      "reviewAvg": 0,
      "reviewCount": 0,
-     "shop": "フェスティバルプラザ",
-     "rank": 8
+     "shop": "暮らしのギフト 「Lumiere」",
+     "rank": 7
     },
     {
      "label": "個包装クッキー",
      "note": "崩れにくく、待ち時間のおやつに",
-     "name": "お世話になりましたお菓子 大量 メッセージ クッキー 約40枚 退職 お菓子 お世話になりました 異動 転勤 感謝 大袋",
+     "name": "メッセージ入りクッキー 「感謝」 大量 約40枚 手土産 ご挨拶クッキー メッセージ クッキー 焼き菓子 おいしい 個包",
      "price": 1620,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cookiemail/cabinet/07355150/imgrc0133709162.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rydzo.17r0l2ea.g00rydzo.17r0mec5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookiemail%2Fmc48-bt-fl-k-bg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcookiemail%2Fi%2F10000726%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cookiemail/cabinet/07355150/imgrc0133709174.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rydzo.17r0l2ea.g00rydzo.17r0mec5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookiemail%2Fmc49-bt-fl-k-bg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcookiemail%2Fi%2F10000727%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E5%A4%A7%E8%A2%8B&tag=sashiire01-22",
      "reviewAvg": 0,
      "reviewCount": 0,
      "shop": "クッキーメール 楽天市場店",
+     "rank": 8
+    },
+    {
+     "label": "一口ようかん",
+     "note": "常温で日持ち。手早くエネルギー補給",
+     "name": "保存用 一口羊羹 50g×10本 保存食 羊羹 ようかん ミニ羊羹 非常食 常温保存 備蓄 和 スイーツ 一口サイズ お",
+     "price": 1598,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurashinokoubin/cabinet/pn70000-30/79267-1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00s5vro.17r0l89c.g00s5vro.17r0mbd3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashinokoubin%2F79267-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashinokoubin%2Fi%2F10011153%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%B8%80%E5%8F%A3%E3%82%88%E3%81%86%E3%81%8B%E3%82%93%20%E5%80%8B%E5%8C%85%E8%A3%85&tag=sashiire01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "暮らしの幸便",
      "rank": 9
     }
    ]
@@ -214,14 +214,14 @@
     {
      "label": "あぶらとり紙",
      "note": "撮影の合間のテカリ対策。かさばらない",
-     "name": "マンダム ギャツビー あぶらとり紙 フィルムタイプ 75枚入×3個セット",
-     "price": 1380,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/j-seikatsu/cabinet/biiino/item/main-image-8/20250622123812_1.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u0z8o.17r0l5ae.g00u0z8o.17r0m43f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fj-seikatsu%2Fn3879-4902806128031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fj-seikatsu%2Fi%2F10003885%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "徳安 京風あぶらとり紙 45枚入 5個セット 10個セット あぶらとり紙 大容量 まとめ買い 油取り紙 脂取り紙 京風 ",
+     "price": 1530,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/faburikkuandokyuto/cabinet/fabu/4511444000069s5_0f.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tnvmo.17r0l521.g00tnvmo.17r0m4bd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffaburikkuandokyuto%2F4511444000069-10%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffaburikkuandokyuto%2Fi%2F10002554%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%82%E3%81%B6%E3%82%89%E3%81%A8%E3%82%8A%E7%B4%99&tag=sashiire01-22",
-     "reviewAvg": 4.78,
-     "reviewCount": 9,
-     "shop": "じぶん生活館",
+     "reviewAvg": 5,
+     "reviewCount": 8,
+     "shop": "ファブリックアンドキュート",
      "rank": 7
     },
     {
