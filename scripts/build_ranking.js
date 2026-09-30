@@ -107,7 +107,7 @@ function tidyName(name) {
 /* Amazon の検索語: 整形した商品名の先頭 3 語（数量・容量の語は除く）。短すぎるときは枠の検索語 */
 function amazonQueryFor(name, fallback) {
   const toks = tidyName(name).split(/[\s　|｜／\/]+/)
-    .filter(t => t.length >= 2 && t.length <= 20 && !/^[×xX]?\d+(個|本|袋|枚|箱|入|粒|錠|包|セット|g|ｇ|ml|ｍｌ|kg|L)/.test(t) && !/^\d+$/.test(t) && !/^[(（].*[)）]$/.test(t) && !/[。、！!？?♪]/.test(t));
+    .filter(t => t.length >= 2 && t.length <= 20 && !/^[×xX]?\d+(個|本|袋|枚|箱|入|粒|錠|包|セット|g|ｇ|ml|ｍｌ|kg|L)/.test(t) && !/^\d+$/.test(t) && !/^[(（].*[)）]$/.test(t) && !/[。、！!？?♪]/.test(t) && !/[()（）\[\]「」【】]/.test(t));
   const q = toks.slice(0, 3).join(' ').slice(0, 40);
   return q.length >= 3 ? q : fallback;
 }
