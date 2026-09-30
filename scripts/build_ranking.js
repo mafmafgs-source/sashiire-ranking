@@ -1,17 +1,19 @@
 /**
  * 差し入れランキング生成スクリプト
  *
- * config.json のクエリリスト（ホワイトリスト）ごとに楽天市場API（標準ソート=売れ筋ベース）で
- * 代表商品を1つ選び、レビュー件数順に並べて ranking.json を出力する。
+ * 9/30 から: 楽天市場の「ランキング API」（ジャンル別の売れ筋順・1000 位まで）から、
+ * config.json の枠（slots）の条件に合う商品を拾い、楽天の順位のまま並べて ranking.json を出す。
+ * ランキングで埋まらなかった枠は、従来どおり商品検索 API（標準ソート＝売れ筋ベース）で 1 枠 1 商品を補う。
+ * 前日の ranking.json と比べて、上がった／下がった／初登場 の印（mv）も付ける。
  *
  * 使い方:
  *   RAKUTEN_APP_ID=xxx RAKUTEN_ACCESS_KEY=yyy node scripts/build_ranking.js
  *   node scripts/build_ranking.js --mock   … API を呼ばずダミーデータで生成（ページの表示確認用）
  *
  * ランキングの客観性:
- *   - 商品選定 = 楽天の標準ソート先頭（売れ筋ベース）から条件を満たす最初の商品
- *   - 掲載順   = 選ばれた商品のレビュー件数の降順
- *   恣意的な並べ替えはしない（景表法の有利誤認リスク回避・企画の信頼性維持）
+ *   - 掲載順 = 楽天のランキング順位（ジャンル別）。恣意的な並べ替えはしない
+ *   - 検索で補った商品はランキング由来の後ろに、レビュー件数順で置く（src: 'search' で区別）
+ *   （景表法の有利誤認リスク回避・企画の信頼性維持）
  */
 
 const fs = require('fs');
@@ -28,6 +30,10 @@ const MOSHIMO = config.moshimo || {};
 const RAKUTEN_AFF_ID = config.rakutenAffiliateId || '';
 const ORIGIN = config.siteOrigin || 'https://jyounetsu.site';
 const COMMUNITY = config.community || {};
+const RANKING = config.ranking || {};
+const RANK_PAGES = Math.max(1, Math.min(34, RANKING.pages || 20));   // ジャンルごとに読むページ数（1 ページ 30 件）
+const MAX_PER_SLOT = RANKING.maxPerSlot || 2;                          // 同じ枠（種類）から出す最大数
+const PER_CAT = RANKING.perCategory || 10;                             // 1 枠あたりの掲載数
 /* 検証用: COMMUNITY_URL で集計元を差し替え（ローカルの JSON ファイルも可） */
 const COMMUNITY_URL = process.env.COMMUNITY_URL || COMMUNITY.url || '';
 
@@ -50,7 +56,15 @@ function moshimoWrap(rakutenUrl) {
    になり全スロットが落ちる。ドキュメントの「古いバージョン」から消えたら差し替えること。
    （20220601 は 2026-08-18 に廃止済みを確認 → 20260701 へ） */
 const API = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701';
+/* ランキング API（ジャンル別・30 件/ページ・最大 34 ページ）。バージョンは上から順に試し、通ったものを使う */
+const RANK_APIS = [
+  'https://openapi.rakuten.co.jp/ichibaranking/api/IchibaItem/Ranking/20220601',
+  'https://openapi.rakuten.co.jp/ichibaranking/api/IchibaItem/Ranking/20260701',
+  'https://openapi.rakuten.co.jp/ichibaranking/api/IchibaItem/Ranking/20260401'
+];
+let rankApi = null;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const headers = { 'Origin': ORIGIN, 'User-Agent': 'sashiire-ranking/2.0 (+' + ORIGIN + '/sashiire/)' };
 
 /* JST基準の現在月（季節枠の判定に使用） */
 function jstMonth() {
@@ -66,15 +80,30 @@ function amazonSearchUrl(query) {
   return `https://www.amazon.co.jp/s?k=${encodeURIComponent(query)}${AMAZON_TAG ? `&tag=${encodeURIComponent(AMAZON_TAG)}` : ''}`;
 }
 
-/* 楽天商品名の軽い整形（表示用。検索には使わない） */
+/* 楽天商品名の整形（表示用）。セール文言・期間・装飾を落として「ブランド 商品名 容量」に近づける */
 function tidyName(name) {
   return String(name || '')
-    .replace(/【[^】]*】/g, '')
-    .replace(/[★◆■▼☆●]/g, '')
-    .replace(/(送料無料|あす楽|即日発送|メール便|ポイント\d*倍|公式|正規品)/g, '')
+    .replace(/【[^】]*】/g, ' ')
+    .replace(/［[^］]*］/g, ' ')
+    .replace(/\[[^\]]*\]/g, ' ')
+    .replace(/＼[^／]*／/g, ' ')
+    .replace(/＜[^＞]*＞/g, ' ')
+    .replace(/≪[^≫]*≫/g, ' ')
+    .replace(/《[^》]*》/g, ' ')
+    .replace(/\d{1,2}\/\d{1,2}[^ 　]*?(まで|迄)/g, ' ')
+    .replace(/(\d{1,2}月\d{1,2}日|\d{1,2}日)[^ 　]*?(まで|迄)/g, ' ')
+    .replace(/[★◆■▼☆●◎※]/g, ' ')
+    .replace(/(送料無料|あす楽|即日発送|翌日配送|メール便|ネコポス|ゆうパケット|ポイント\d*倍|P\d+倍|公式|正規品|楽天\S*大賞\S*|\d+年連続\S*|クーポン\S*|最大\d+[%％]\S*|\d+[%％]OFF\S*|SALE|セール|限定|お買い得|激安|特価|訳あり)/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 60);
+}
+/* Amazon の検索語: 整形した商品名の先頭 3 語（数量・容量の語は除く）。短すぎるときは枠の検索語 */
+function amazonQueryFor(name, fallback) {
+  const toks = tidyName(name).split(/[\s　]+/)
+    .filter(t => t.length >= 2 && !/^[×xX]?\d+(個|本|袋|枚|箱|入|粒|錠|包|セット|g|ｇ|ml|ｍｌ|kg|L)/.test(t) && !/^\d+$/.test(t) && !/^[(（].*[)）]$/.test(t));
+  const q = toks.slice(0, 3).join(' ');
+  return q.length >= 3 ? q : fallback;
 }
 
 async function searchRakuten(query, priceRule) {
@@ -91,29 +120,67 @@ async function searchRakuten(query, priceRule) {
   });
   /* もしも未設定時は本家アフィリエイトIDでAPIに成果付きURLを生成させる */
   if (!MOSHIMO.aId && RAKUTEN_AFF_ID) params.set('affiliateId', RAKUTEN_AFF_ID);
-  const res = await fetch(`${API}?${params}`, {
-    /* 新APIは「許可されたWebサイト」に登録したドメインのOriginヘッダが必須 */
-    headers: { 'Origin': ORIGIN, 'User-Agent': 'sashiire-ranking/1.0 (+' + ORIGIN + '/sashiire/)' }
-  });
+  const res = await fetch(`${API}?${params}`, { headers });
   if (!res.ok) throw new Error(`Rakuten API ${res.status} for "${query}": ${(await res.text()).slice(0,200)}`);
   const data = await res.json();
   return data.Items || [];
 }
 
-function pickItem(items, minReviewAvg, slot) {
-  /* 関連性ガード: must（未指定ならクエリの先頭語）が商品名・説明文に含まれない商品は
-     キーワード盛りの無関係商品とみなして除外 */
+/* ランキング API を 1 ページ読む。返る形（formatVersion の有無）の違いを吸収して商品の配列にする */
+async function fetchRankingPage(genreId, page) {
+  const apis = rankApi ? [rankApi] : RANK_APIS;
+  let lastErr = null;
+  for (const api of apis) {
+    const params = new URLSearchParams({ applicationId: APP_ID, accessKey: ACCESS_KEY, genreId: String(genreId), page: String(page), formatVersion: '2' });
+    if (!MOSHIMO.aId && RAKUTEN_AFF_ID) params.set('affiliateId', RAKUTEN_AFF_ID);
+    const res = await fetch(`${api}?${params}`, { headers });
+    if (!res.ok) { lastErr = new Error(`Rakuten Ranking API ${res.status} (${api.slice(-8)}) genre=${genreId} page=${page}: ${(await res.text()).slice(0,160)}`); await sleep(config.rules.requestIntervalMs); continue; }
+    const data = await res.json();
+    rankApi = api;
+    return (data.Items || []).map(x => (x && x.Item) ? x.Item : x).filter(Boolean);
+  }
+  throw lastErr || new Error('ranking api unavailable');
+}
+
+/* ジャンルの売れ筋を上位から集める（ページ数は config.ranking.pages）。失敗したページは飛ばす */
+async function fetchGenreRanking(genreId) {
+  const out = [];
+  for (let p = 1; p <= RANK_PAGES; p++) {
+    try {
+      const items = await fetchRankingPage(genreId, p);
+      if (!items.length) break;
+      items.forEach(it => { if (!it.rank) it.rank = (p - 1) * 30 + out.length % 30 + 1; out.push(it); });
+    } catch (err) {
+      console.warn(`WARN: ランキング genre=${genreId} page=${p} 取得失敗（スキップ）:`, err.message);
+      if (p === 1) break;   // 1 ページ目から落ちる＝この API 自体が使えない
+    } finally {
+      await sleep(config.rules.requestIntervalMs);
+    }
+  }
+  return out;
+}
+
+/* 商品が枠（slot）の条件に合うか。must（未指定ならクエリの先頭語）が商品名・説明文に含まれること */
+function slotMatches(it, slot) {
   const must = (slot.must && slot.must.length) ? slot.must : [String(slot.query).split(/\s+/)[0]];
-  const ban = (config.rules.banWords || []);
+  const text = `${it.itemName || ''} ${it.catchcopy || ''} ${it.itemCaption || ''}`;
+  return must.some(m => text.includes(m));
+}
+/* 用途違い・禁止語・低評価などの共通の除外 */
+function itemOk(it, minReviewAvg, priceRule) {
+  if (!it.itemUrl) return false;
+  if (it.reviewCount > 0 && it.reviewAverage < minReviewAvg) return false;
+  if (priceRule && (it.itemPrice < priceRule.min || it.itemPrice > priceRule.max)) return false;
+  if (String(it.availability ?? '1') === '0') return false;
+  const nameText = `${it.itemName || ''} ${it.catchcopy || ''}`;
+  if ((config.rules.banWords || []).some(b => nameText.includes(b))) return false;
+  if (NG && ngHit(nameText)) return false;   // 洋酒入りのお菓子などを、定番枠でも出さない
+  return true;
+}
+function pickItem(items, minReviewAvg, slot) {
   for (const it of items) {
-    if (it.reviewCount > 0 && it.reviewAverage < minReviewAvg) continue; // 低評価は除外（レビュー0件は許容）
-    if (!it.itemUrl) continue;
-    const text = `${it.itemName || ''} ${it.catchcopy || ''} ${it.itemCaption || ''}`;
-    if (!must.some(m => text.includes(m))) continue;
-    /* 用途違い（名入れギフト・記念品・業務用等）は商品名・キャッチコピーで除外 */
-    const nameText = `${it.itemName || ''} ${it.catchcopy || ''}`;
-    if (ban.some(b => nameText.includes(b))) continue;
-    if (NG && ngHit(nameText)) continue;   // 洋酒入りのお菓子などを、定番枠でも出さない
+    if (!itemOk(it, minReviewAvg, null)) continue;
+    if (!slotMatches(it, slot)) continue;
     return it;
   }
   return null;
@@ -136,7 +203,7 @@ async function fetchCommunityTerms() {
     if (/^https?:/.test(COMMUNITY_URL)) {
       const ctl = new AbortController();
       const t = setTimeout(() => ctl.abort(), 15000);
-      const res = await fetch(COMMUNITY_URL, { signal: ctl.signal, headers: { 'User-Agent': 'sashiire-ranking/1.0' } });
+      const res = await fetch(COMMUNITY_URL, { signal: ctl.signal, headers: { 'User-Agent': 'sashiire-ranking/2.0' } });
       clearTimeout(t);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       data = await res.json();
@@ -159,7 +226,7 @@ async function loadNg() {
   if (/^https?:/.test(url)) {
     const ctl = new AbortController();
     const t = setTimeout(() => ctl.abort(), 15000);
-    const res = await fetch(url, { signal: ctl.signal, headers: { 'User-Agent': 'sashiire-ranking/1.0' } });
+    const res = await fetch(url, { signal: ctl.signal, headers: { 'User-Agent': 'sashiire-ranking/2.0' } });
     clearTimeout(t);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     d = await res.json();
@@ -215,7 +282,7 @@ async function buildCommunity() {
       }
     }
     if (!it) { console.warn(`WARN: みんなの検索 "${term.t}" は条件を満たす商品なし（スキップ）`); continue; }
-    items.push(toItem(it, { label: term.t, note: `直近90日で${term.n}人が探しています`, query: term.t }, { people: term.n }));
+    items.push(toItem(it, { label: term.t, note: `直近90日で${term.n}人が探しています`, query: term.t }, { people: term.n, src: 'search' }));
   }
   if (!items.length) return null;
   items.forEach((it, i) => { it.rank = i + 1; });   // 探した人数の順のまま
@@ -223,39 +290,138 @@ async function buildCommunity() {
 }
 function toItem(it, slot, extra) {
   const img = (it.mediumImageUrls && it.mediumImageUrls[0]) || '';
+  const name = tidyName(it.itemName);
   return Object.assign({
     label: slot.label,
     note: slot.note,
-    name: tidyName(it.itemName),
+    name,
+    code: String(it.itemCode || ''),
     price: it.itemPrice,
     image: typeof img === 'string' ? img : (img.imageUrl || ''),
     rakutenUrl: MOSHIMO.aId ? moshimoWrap(it.itemUrl) : (it.affiliateUrl || it.itemUrl),
-    amazonUrl: amazonSearchUrl(slot.query),
+    /* Amazon は商品名（ブランド＋商品）で検索。整形後に短すぎる名前は枠の検索語 */
+    amazonUrl: amazonSearchUrl(amazonQueryFor(it.itemName, slot.query)),
     reviewAvg: it.reviewAverage || 0,
     reviewCount: it.reviewCount || 0,
     shop: it.shopName || ''
   }, extra || {});
 }
 
-function mockItem(slot, i) {
+const MOCK_NAMES = {
+  sweets: ['ブルボン アルフォート ミニチョコレート 12個×10箱', '不二家 カントリーマアム 大袋 20枚', '森永 ラムネ 大粒 ヨーグルト味 ×6袋', '江崎グリコ ビスコ 小分けパック 2枚×24', 'アサヒ ミンティア ワイルド＆クール 50粒 ×10', '亀田製菓 ハッピーターン 個包装 108g', 'カバヤ さくさくぱんだ 個包装 大袋', '井村屋 片手で食べられる小さなようかん 7本', '明治 果汁グミ 個包装 アソート', 'ロッテ のど飴 個包装 大袋'],
+  goods: ['花王 めぐりズム 蒸気でホットアイマスク 無香料 12枚', '花王 バブ 入浴剤 個包装 アソート 12錠', 'マンダム ギャツビー ボディペーパー 無香料 30枚', 'ニベア モイスチャーリップ 無香料', 'カバヤ 塩分チャージタブレット 個包装 3袋', 'ギャツビー あぶらとり紙 フィルムタイプ 75枚×3', 'ユニ・チャーム 超快適マスク 個包装 30枚', 'ジョンソン バンドエイド キズパワーパッド スリム', 'シルコット 除菌ウェットティッシュ 携帯用 ×3', '小林製薬 桐灰 貼らないカイロ 30個']
+};
+function mockItem(slot, i, catId) {
+  const names = MOCK_NAMES[catId] || [];
   return {
-    itemName: `${slot.label} のサンプル商品（モック表示）`,
+    itemName: names[i] || `${slot.label} のサンプル商品（モック表示）`,
+    itemCode: `mock:${catId || 'x'}-${i}`,
     itemPrice: 500 + i * 137,
     itemUrl: 'https://www.rakuten.co.jp/',
     mediumImageUrls: [],
     reviewAverage: 4.2,
     reviewCount: 1200 - i * 83,
-    shopName: 'サンプルショップ'
+    shopName: 'サンプルショップ',
+    rank: i + 1
   };
+}
+
+/* 前回の ranking.json（比較用）。無ければ空 */
+function loadPrev() {
+  try {
+    const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'ranking.json'), 'utf8'));
+    const m = {};
+    (d.categories || []).forEach(c => { m[c.id] = {}; (c.items || []).forEach(it => { if (it.code) m[c.id][it.code] = it.rank; }); });
+    return m;
+  } catch (e) { return {}; }
+}
+/* 前日との比べ: new（初登場）／up（上がった）／down（下がった）／same */
+function markMoves(cat, prev) {
+  const p = prev[cat.id] || {};
+  cat.items.forEach(it => {
+    const was = it.code ? p[it.code] : undefined;
+    if (was === undefined) { it.mv = 'new'; it.mvN = 0; }
+    else if (was > it.rank) { it.mv = 'up'; it.mvN = was - it.rank; }
+    else if (was < it.rank) { it.mv = 'down'; it.mvN = it.rank - was; }
+    else { it.mv = 'same'; it.mvN = 0; }
+  });
+}
+
+/* 1 カテゴリ分: ランキング由来（楽天の順位のまま）→ 足りない枠を検索で補う */
+async function buildCategory(cat, month) {
+  const slots = cat.slots.filter(s => !s.months || s.months.includes(month));
+  const items = [];
+  const perSlot = {};
+  const seen = new Set();
+  const require = cat.require || [];
+
+  if (MOCK) {
+    slots.slice(0, PER_CAT).forEach((slot, i) => items.push(toItem(mockItem(slot, i, cat.id), slot, { src: 'rank', rankSrc: (i + 1) * 3 })));
+  } else if (cat.genres && cat.genres.length) {
+    /* ジャンル別の売れ筋を集めて、楽天の順位順に並べる（複数ジャンルは順位でまとめて並べる） */
+    let pool = [];
+    for (const g of cat.genres) {
+      const list = await fetchGenreRanking(g);
+      console.log(`  genre ${g}: ${list.length} 件`);
+      list.forEach(it => { it._genre = g; });
+      pool = pool.concat(list);
+    }
+    pool.sort((a, b) => (a.rank || 9999) - (b.rank || 9999));
+    for (const it of pool) {
+      if (items.length >= PER_CAT) break;
+      const code = String(it.itemCode || '');
+      if (!code || seen.has(code)) continue;
+      if (!itemOk(it, config.rules.minReviewAvg, cat.price)) continue;
+      if (require.length && !require.some(w => `${it.itemName || ''} ${it.catchcopy || ''} ${it.itemCaption || ''}`.includes(w))) continue;
+      const slot = slots.find(s => slotMatches(it, s));
+      if (!slot) continue;
+      if ((perSlot[slot.label] || 0) >= MAX_PER_SLOT) continue;
+      perSlot[slot.label] = (perSlot[slot.label] || 0) + 1;
+      seen.add(code);
+      items.push(toItem(it, slot, { src: 'rank', rankSrc: it.rank || null, genre: it._genre }));
+    }
+    console.log(`  ランキング由来: ${items.length} 件（枠: ${Object.keys(perSlot).join('・') || 'なし'}）`);
+  }
+
+  /* 補充: まだ商品が無い枠を検索で（従来の方式）。ランキング由来の後ろにレビュー件数順 */
+  if (!MOCK && items.length < PER_CAT) {
+    const fills = [];
+    for (const slot of slots) {
+      if (perSlot[slot.label]) continue;
+      if (items.length + fills.length >= PER_CAT) break;
+      let it = null;
+      try {
+        const found = (await searchRakuten(slot.query, cat.price)).filter(x => !seen.has(String(x.itemCode || '')));
+        it = pickItem(found, config.rules.minReviewAvg, slot);
+      } catch (err) {
+        console.warn(`WARN: "${slot.query}" の取得に失敗（スキップ）:`, err.message);
+      } finally {
+        /* 楽天APIのレート制限（1req/秒）対策。失敗時こそ間隔を空ける */
+        await sleep(config.rules.requestIntervalMs);
+      }
+      if (!it) { console.warn(`WARN: "${slot.query}" は条件を満たす商品なし（スキップ）`); continue; }
+      seen.add(String(it.itemCode || ''));
+      fills.push(toItem(it, slot, { src: 'search', rankSrc: null }));
+    }
+    fills.sort((a, b) => b.reviewCount - a.reviewCount);
+    console.log(`  検索で補充: ${fills.length} 件`);
+    items.push(...fills);
+  }
+
+  const top = items.slice(0, PER_CAT);
+  top.forEach((it, i) => { it.rank = i + 1; });
+  return { id: cat.id, title: cat.title, lead: cat.lead, items: top };
 }
 
 async function main() {
   const month = jstMonth();
+  const prev = loadPrev();
   const out = {
     updated: jstDate(),
     updatedAt: new Date().toISOString(),
     month,
-    basis: '楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新',
+    basis: '楽天市場の売れ筋ランキング（ジャンル別）から、個包装など差し入れ向きの条件に合う商品を自動で選び、楽天の順位のまま掲載。足りない枠は検索の売れ筋順で補う。毎日自動更新',
+    avoid: config.avoid || [],
     mock: MOCK || undefined,
     categories: []
   };
@@ -264,38 +430,15 @@ async function main() {
   if (COMMUNITY.enabled) { try { await loadNg(); } catch (err) { console.warn('WARN: 禁止語の一覧を読めませんでした:', err.message); } }
 
   for (const cat of config.categories) {
-    const slots = cat.slots.filter(s => !s.months || s.months.includes(month));
-    const items = [];
-    for (let i = 0; i < slots.length; i++) {
-      const slot = slots[i];
-      let it = null;
-      if (MOCK) {
-        it = mockItem(slot, i);
-      } else {
-        try {
-          const found = await searchRakuten(slot.query, cat.price);
-          it = pickItem(found, config.rules.minReviewAvg, slot);
-        } catch (err) {
-          console.warn(`WARN: "${slot.query}" の取得に失敗（スキップ）:`, err.message);
-        } finally {
-          /* 楽天APIのレート制限（1req/秒）対策。失敗時こそ間隔を空ける
-             （try内に置くと1件の失敗で待機が飛び、以降が429の連鎖で全滅する） */
-          await sleep(config.rules.requestIntervalMs);
-        }
-      }
-      if (!it) { console.warn(`WARN: "${slot.query}" は条件を満たす商品なし（スキップ）`); continue; }
-      items.push(toItem(it, slot));
-    }
-    /* 掲載順 = レビュー件数の降順（客観指標）。各枠 10 位まで（9/26・季節枠で 11 になる月があるため上位 10 件に切る） */
-    items.sort((a, b) => b.reviewCount - a.reviewCount);
-    const top = items.slice(0, cat.max || 10);
-    top.forEach((it, i) => { it.rank = i + 1; });
-    out.categories.push({ id: cat.id, title: cat.title, lead: cat.lead, items: top });
+    console.log(`== ${cat.id}`);
+    const built = await buildCategory(cat, month);
+    markMoves(built, prev);
+    out.categories.push(built);
   }
 
   /* みんなが探している差し入れ（あれば先頭に） */
   const community = await buildCommunity();
-  if (community) out.categories.unshift(community);
+  if (community) { markMoves(community, prev); out.categories.unshift(community); }
 
   const json = JSON.stringify(out, null, 1);
   fs.writeFileSync(path.join(ROOT, 'ranking.json'), json);

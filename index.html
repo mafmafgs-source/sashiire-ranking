@@ -79,6 +79,11 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 .more[hidden]{display:none;}
 .morebtn{display:block; width:100%; font:inherit; font-size:13.5px; font-weight:700; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--tx); cursor:pointer; margin:-2px 0 12px;}
 .morebtn:active{background:var(--acbg);}
+.kind{font-size:12px; color:var(--sub); margin-top:1px;}
+.mv{display:inline-block; font-size:11px; font-weight:700; border-radius:99px; padding:0 7px; margin-left:6px; vertical-align:2px; background:var(--acbg); color:var(--sub);}
+.mv.up{color:#1a7f37; background:#e9f5ec;} .mv.dn{color:#9a3412; background:#fbeee6;} .mv.new{color:#fff; background:var(--tx);}
+.avoid{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-top:20px;}
+.avoid h3{font-size:14px; margin-bottom:4px;} .avoid ul{list-style:none;} .avoid li{font-size:13.5px; padding-left:1.3em; text-indent:-1.3em;} .avoid li::before{content:"✕ "; color:var(--sub);}
 </style>
 </head>
 <body>
@@ -103,7 +108,7 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
 
 <div class="about">
   <h3>このランキングの選定基準</h3>
-  <p>差し入れは「もらって困らない」が最優先。次の条件でクエリを設計しています。</p>
+  <p>差し入れは「もらって困らない」が最優先。楽天市場の売れ筋ランキングから、次の条件に合う商品だけを拾って順位のまま載せています。順位の横の印は前日との比べです。</p>
   <ul>
     <li>個包装で配りやすい（衛生面・その場で食べなくてもよい）</li>
     <li>常温保存OK（現場に冷蔵庫はありません）</li>
@@ -112,14 +117,14 @@ footer{font-size:11px; color:var(--sub); margin-top:30px; line-height:1.8;}
     <li>匂いが強くない（スタジオは共有空間）</li>
     <li>500〜2,000円（気を遣わせない価格帯）</li>
   </ul>
-  <p style="margin-top:8px">季節でも入れ替えています（夏：塩分・冷感／冬：カイロ・のど飴。チョコは溶けるので夏は外す、など）。</p>
+  <p style="margin-top:8px">季節でも入れ替えています（夏：塩分・冷感／冬：貼らないカイロ。チョコは溶けるので夏は外す、など）。</p>
 </div>
 
 <a class="cta" href="/awase/">併せの募集・準備には「併せーる」（無料）</a>
 
 <footer>
   <p id="basis"></p>
-  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。掲載順は自動集計によるもので（定番＝レビュー件数順、みんなが探している差し入れ＝検索した人数順）、紹介料率による並べ替えは行っていません。</p>
+  <p>Amazonのアソシエイトとして、当サイト運営者は適格販売により収入を得ています。掲載順は自動集計によるもので（定番＝楽天市場の売れ筋ランキング順、みんなが探している差し入れ＝検索した人数順）、紹介料率による並べ替えは行っていません。</p>
 </footer>
 
 <script>
@@ -210,7 +215,9 @@ function render(data){
   document.getElementById('updated').textContent = `${data.updated} 更新（毎日自動更新）` + (data.mock ? '｜プレビュー用ダミーデータ' : '');
   document.getElementById('basis').textContent = data.basis || '';
   const app = document.getElementById('app');
-  /* 各枠 10 位まで。1〜5 位を表示し、6 位以下は「もっと見る」で開く（9/26） */
+  /* 各枠 10 位まで。1〜5 位を表示し、6 位以下は「もっと見る」で開く（9/26）。9/30〜 商品名が主役・前日との比べの印 */
+  const mvBadge = it=>it.mv==='up' ? `<span class="mv up">↑${it.mvN||''}</span>` : it.mv==='down' ? `<span class="mv dn">↓${it.mvN||''}</span>` : it.mv==='new' ? `<span class="mv new">NEW</span>` : it.mv==='same' ? `<span class="mv">→</span>` : '';
+  const avoid = Array.isArray(data.avoid) ? data.avoid.filter(x=>typeof x==='string' && x) : [];
   const itemHTML = (cat, it)=>`
       <div class="item">
         <div class="rank ${it.rank===1?'r1':''}">${it.rank}</div>
@@ -218,9 +225,9 @@ function render(data){
           ? `<img class="thumb" src="${esc(it.image)}" alt="${esc(it.label)}" loading="lazy" onerror="this.outerHTML='<div class=\\'thumb ph\\'>No Image</div>'">`
           : `<div class="thumb ph">No Image</div>`}
         <div class="body">
-          <div class="label">${esc(it.label)}</div>
+          <div class="label">${esc(it.name || it.label)}${mvBadge(it)}</div>
+          ${it.name?`<div class="kind">${esc(it.label)}</div>`:''}
           ${cat.community ? `<div class="ppl">${esc(it.note)}</div>` : `<div class="note">${esc(it.note)}</div>`}
-          ${it.name?`<div class="pname">${esc(it.name)}</div>`:''}
           <div class="meta"><b>${yen(it.price)}円</b><span style="font-size:11px">（参考価格）</span>
             ${it.reviewCount?`<span class="rv">レビュー ${esc(it.reviewAvg)}（${yen(it.reviewCount)}件）</span>`:''}
           </div>
@@ -237,7 +244,7 @@ function render(data){
     ${head.map(it=>itemHTML(cat, it)).join('')}
     ${rest.length ? `<div class="more" hidden>${rest.map(it=>itemHTML(cat, it)).join('')}</div>
     <button class="morebtn" data-n="${rest.length}" onclick="toggleMore(this)">もっと見る（${head.length+1}〜${cat.items.length}位）</button>` : ''}
-  `;}).join('');
+  `;}).join('') + (avoid.length ? `<div class="avoid"><h3>避けたほうがいい差し入れ</h3><ul>${avoid.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>` : '');
 }
 function toggleMore(btn){
   const box = btn.previousElementSibling;
