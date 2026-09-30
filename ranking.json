@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-30",
- "updatedAt": "2026-09-30T02:24:47.813Z",
+ "updatedAt": "2026-09-30T02:30:18.579Z",
  "month": 9,
  "basis": "楽天市場の売れ筋ランキング（ジャンル別）から、個包装など差し入れ向きの条件に合う商品を自動で選び、楽天の順位のまま掲載。足りない枠は検索の売れ筋順で補う。毎日自動更新",
  "avoid": [
@@ -30,7 +30,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 1,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -41,7 +41,7 @@
      "price": 2106,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/comvita/cabinet/new_001/new_item_001/cundy_lh40r/imgrc0106315170.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00re9fo.17r0l84f.g00re9fo.17r0m600/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomvita%2F340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcomvita%2Fi%2F10000036%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AC%E3%83%A2%E3%83%B3%EF%BC%86%E3%83%8F%E3%83%8B%E3%83%BC%E3%81%AE%E3%81%A9%E9%A3%B4%20UMF10%2B%20%E5%85%A5%E3%82%8A%EF%BC%89&tag=hiroyukinak01-22",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AC%E3%83%A2%E3%83%B3%EF%BC%86%E3%83%8F%E3%83%8B%E3%83%BC%E3%81%AE%E3%81%A9%E9%A3%B4%20UMF10%2B%20%E3%82%B3%E3%83%B3%E3%83%93%E3%82%BF&tag=hiroyukinak01-22",
      "reviewAvg": 4.55,
      "reviewCount": 511,
      "shop": "マヌカハニーのコンビタ 公式店",
@@ -66,8 +66,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 3,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "ゼリー飲料",
@@ -84,7 +84,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 4,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -169,25 +169,6 @@
     {
      "label": "個包装マスク",
      "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
-     "name": "高評価 マスク バイカラーマスク 不織布マスク 大容量51枚 立体マスク 20枚 3Dマスク 花粉 マスク 子供用 20",
-     "code": "cicibella-sports:10000118",
-     "price": "398",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cicibella-sports/cabinet/08713654/msk50-5-nl.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tpvro.17r0la1a.g00tpvro.17r0mb02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicibella-sports%2Fmsk50-5%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%AB%98%E8%A9%95%E4%BE%A1%20%E3%83%9E%E3%82%B9%E3%82%AF%20%E3%83%90%E3%82%A4%E3%82%AB%E3%83%A9%E3%83%BC%E3%83%9E%E3%82%B9%E3%82%AF&tag=hiroyukinak01-22",
-     "reviewAvg": "4.51",
-     "reviewCount": 167919,
-     "shop": "cicibella sports",
-     "src": "rank",
-     "rankSrc": 37,
-     "genre": 551169,
-     "rank": 1,
-     "mv": "up",
-     "mvN": 5
-    },
-    {
-     "label": "個包装マスク",
-     "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
      "name": "9/29 マスク 不織布 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク マスク ",
      "code": "cicib:10002043",
      "price": "1980",
@@ -200,25 +181,43 @@
      "src": "rank",
      "rankSrc": 53,
      "genre": 551169,
-     "rank": 2,
+     "rank": 1,
      "mv": "up",
-     "mvN": 5
+     "mvN": 1
+    },
+    {
+     "label": "個包装マスク",
+     "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
+     "name": "9/29 マスク 秋用マスク 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク 立体",
+     "code": "cicibella-sports:10000801",
+     "price": "595",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicibella-sports/top-image/day3/mskblt20_102.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tpvro.17r0la1a.g00tpvro.17r0mb02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicibella-sports%2Fmskblt20%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%A7%8B%E7%94%A8%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
+     "reviewAvg": "4.44",
+     "reviewCount": 47195,
+     "shop": "cicibella sports",
+     "src": "rank",
+     "rankSrc": 179,
+     "genre": 551169,
+     "rank": 2,
+     "mv": "new",
+     "mvN": 0
     },
     {
      "label": "蒸気でホットアイマスク",
      "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
-     "name": "ポンプ式 飛行機 コンパクト エアー 空気 車 まくら 首枕 携帯枕 折りたたみ トラベルピロー 洗える 簡単 収納袋付",
-     "code": "inamical:10000000",
-     "price": "1980",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/inamical/cabinet/11273188/imgrc0335697935.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00umqxo.17r0l575.g00umqxo.17r0m7e7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finamical%2Fnpa-1%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9D%E3%83%B3%E3%83%97%E5%BC%8F%20%E9%A3%9B%E8%A1%8C%E6%A9%9F%20%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88&tag=hiroyukinak01-22",
-     "reviewAvg": "4.57",
-     "reviewCount": 2534,
-     "shop": "amifun",
-     "src": "rank",
-     "rankSrc": 66,
-     "genre": 215783,
+     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
+     "code": "l-plus:10200970",
+     "price": 1650,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qzvko.17r0l3ae.g00qzvko.17r0m626/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fl-plus%2Fi%2F10200970%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%81%E3%81%90%E3%82%8A%E3%82%BA%E3%83%A0%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF%20%E8%92%B8%E6%B0%97%E3%82%81%E3%81%90%E3%82%8B%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF&tag=hiroyukinak01-22",
+     "reviewAvg": 4.69,
+     "reviewCount": 211,
+     "shop": "miui",
+     "src": "search",
+     "rankSrc": null,
      "rank": 3,
      "mv": "new",
      "mvN": 0
@@ -238,7 +237,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 4,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -249,14 +248,14 @@
      "price": 495,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/337/4987241156337.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r136o.17r0l37c.g00r136o.17r0m480/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fe518870h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F10618602%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A1%E3%83%B3%E3%82%BD%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%A0%20%E3%83%A1%E3%83%AB%E3%83%86%E3%82%A3%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%83%AA%E3%83%83%E3%83%97%20%E7%84%A1%E9%A6%99%E6%96%99(2.4g)&tag=hiroyukinak01-22",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A1%E3%83%B3%E3%82%BD%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%A0%20%E3%83%A1%E3%83%AB%E3%83%86%E3%82%A3%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%83%AA%E3%83%83%E3%83%97&tag=hiroyukinak01-22",
      "reviewAvg": 4.69,
      "reviewCount": 35,
      "shop": "楽天24",
      "src": "search",
      "rankSrc": null,
      "rank": 5,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -274,7 +273,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 6,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -292,7 +291,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 7,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -310,7 +309,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 8,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -328,7 +327,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 9,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -346,7 +345,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 10,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     }
    ]
