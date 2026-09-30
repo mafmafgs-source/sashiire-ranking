@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29",
- "updatedAt": "2026-09-29T14:17:49.243Z",
+ "updated": "2026-09-30",
+ "updatedAt": "2026-09-30T00:03:30.358Z",
  "month": 9,
  "basis": "楽天市場の売れ筋（標準ソート）から各枠の代表商品を自動選定し、レビュー件数順に掲載。毎日自動更新",
  "categories": [
@@ -12,14 +12,14 @@
     {
      "label": "個包装の焼き菓子",
      "note": "配りやすく衣装を汚さない大定番",
-     "name": "9/24 15:00〜10/1 23:59まで＼3年連続／ 2025年楽天グルメ大賞受賞 選べる入数 ザ・メープルマニア",
-     "price": 1188,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/pointup/imgrc0125066786.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tq9ao.17r0l835.g00tq9ao.17r0mb34/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsucreyshop%2Fi%2F10000030%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "name": "ひととえ Hitotoe キュートセレクション",
+     "price": 1650,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/friend-gift/cabinet/renewal/re2024/cute_main.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r41jo.17r0la69.g00r41jo.17r0mfc2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffriend-gift%2F10011115%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffriend-gift%2Fi%2F10011115%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8F%93%E5%AD%90%20%E5%80%8B%E5%8C%85%E8%A3%85%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=hiroyukinak01-22",
-     "reviewAvg": 4.75,
-     "reviewCount": 1402,
-     "shop": "シュクレイ楽天市場店",
+     "reviewAvg": 4.59,
+     "reviewCount": 1849,
+     "shop": "暮らしのギフト 「Lumiere」",
      "rank": 1
     },
     {
@@ -49,19 +49,6 @@
      "rank": 3
     },
     {
-     "label": "一口ようかん",
-     "note": "常温で日持ち。手早くエネルギー補給",
-     "name": "保存用 一口羊羹 50g×10本 保存食 羊羹 ようかん ミニ羊羹 非常食 常温保存 備蓄 食料 和 スイーツ 一口サイ",
-     "price": 1598,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/wide02/cabinet/pn70000-30/79267-1.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rhyqo.17r0l3c3.g00rhyqo.17r0m3e6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide02%2F79267-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide02%2Fi%2F10021837%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%B8%80%E5%8F%A3%E3%82%88%E3%81%86%E3%81%8B%E3%82%93%20%E5%80%8B%E5%8C%85%E8%A3%85&tag=hiroyukinak01-22",
-     "reviewAvg": 4.8,
-     "reviewCount": 5,
-     "shop": "通販ライフ",
-     "rank": 4
-    },
-    {
      "label": "個包装のど飴",
      "note": "乾燥するスタジオ・声出し対策",
      "name": "アサヒ バヤリース 至福の果実のど飴 フルーツ のど飴 4種 詰め合わせ 100粒 個包装 大容量",
@@ -72,6 +59,19 @@
      "reviewAvg": 3.5,
      "reviewCount": 2,
      "shop": "キャラショップPLAZA",
+     "rank": 4
+    },
+    {
+     "label": "一口ようかん",
+     "note": "常温で日持ち。手早くエネルギー補給",
+     "name": "ひとくちミニ水ようかん 50個 個包装 | 和菓子 ようかん 羊羹 水ようかん 水羊羹 小倉 あんこ お徳用 大容量 得",
+     "price": 1580,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tennenlife/cabinet/item/thumbnail1/sm00010715_00.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00quwio.17r0lb92.g00quwio.17r0m666/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftennenlife%2F10715%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftennenlife%2Fi%2F10001847%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%B8%80%E5%8F%A3%E3%82%88%E3%81%86%E3%81%8B%E3%82%93%20%E5%80%8B%E5%8C%85%E8%A3%85&tag=hiroyukinak01-22",
+     "reviewAvg": 4,
+     "reviewCount": 2,
+     "shop": "健康日和",
      "rank": 5
     },
     {
@@ -175,7 +175,7 @@
     {
      "label": "冷感タオル",
      "note": "夏の屋外撮影の救世主",
-     "name": "＼最大30%OFFクーポン／ ひんやりタオル 冷却タオル スポーツ 冷感タオル クールタオル ランニング マラソン ジョ",
+     "name": "＼24時間限定 5%OFFクーポン／ ひんやりタオル 冷却タオル スポーツ 冷感タオル クールタオル ランニング マラソ",
      "price": 1000,
      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/funtastic/cabinet/07347997/09234045/sprz003-t_1-2.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tfamo.17r0l96c.g00tfamo.17r0m53c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuntastic%2Fsprz003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffuntastic%2Fi%2F10000320%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
