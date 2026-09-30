@@ -92,6 +92,8 @@ function tidyName(name) {
     .replace(/《[^》]*》/g, ' ')
     .replace(/\d{1,2}\/\d{1,2}[^ 　]*?(まで|迄)/g, ' ')
     .replace(/(\d{1,2}月\d{1,2}日|\d{1,2}日)[^ 　]*?(まで|迄)/g, ' ')
+    .replace(/\d{1,2}:\d{2}\s*(まで|迄)/g, ' ')
+    .replace(/(本日限り|今だけ|\d+円ポッキリ|ポッキリ|期間限定|数量限定|新発売|話題の|大人気|人気No\.?\d*|ランキング\S*|受賞\S*)/g, ' ')
     .replace(/[★◆■▼☆●◎※]/g, ' ')
     .replace(/(送料無料|あす楽|即日発送|翌日配送|メール便|ネコポス|ゆうパケット|ポイント\d*倍|P\d+倍|公式|正規品|楽天\S*大賞\S*|\d+年連続\S*|クーポン\S*|最大\d+[%％]\S*|\d+[%％]OFF\S*|SALE|セール|限定|お買い得|激安|特価|訳あり)/gi, ' ')
     .replace(/\s+/g, ' ')
@@ -100,9 +102,9 @@ function tidyName(name) {
 }
 /* Amazon の検索語: 整形した商品名の先頭 3 語（数量・容量の語は除く）。短すぎるときは枠の検索語 */
 function amazonQueryFor(name, fallback) {
-  const toks = tidyName(name).split(/[\s　]+/)
-    .filter(t => t.length >= 2 && !/^[×xX]?\d+(個|本|袋|枚|箱|入|粒|錠|包|セット|g|ｇ|ml|ｍｌ|kg|L)/.test(t) && !/^\d+$/.test(t) && !/^[(（].*[)）]$/.test(t));
-  const q = toks.slice(0, 3).join(' ');
+  const toks = tidyName(name).split(/[\s　|｜／\/]+/)
+    .filter(t => t.length >= 2 && t.length <= 20 && !/^[×xX]?\d+(個|本|袋|枚|箱|入|粒|錠|包|セット|g|ｇ|ml|ｍｌ|kg|L)/.test(t) && !/^\d+$/.test(t) && !/^[(（].*[)）]$/.test(t) && !/[。、！!？?♪]/.test(t));
+  const q = toks.slice(0, 3).join(' ').slice(0, 40);
   return q.length >= 3 ? q : fallback;
 }
 
@@ -160,10 +162,14 @@ async function fetchGenreRanking(genreId) {
   return out;
 }
 
-/* 商品が枠（slot）の条件に合うか。must（未指定ならクエリの先頭語）が商品名・説明文に含まれること */
-function slotMatches(it, slot) {
+/* 商品が枠（slot）の条件に合うか。must（未指定ならクエリの先頭語）が含まれ、slot.ban が含まれないこと。
+   strict（ランキング由来）は商品名＋キャッチコピーだけで判定する。説明文まで見ると
+   「入浴剤にも使えます」のような一言でキッチンスポンジが入浴剤の枠に入る（9/30 に発生） */
+function slotMatches(it, slot, strict) {
   const must = (slot.must && slot.must.length) ? slot.must : [String(slot.query).split(/\s+/)[0]];
-  const text = `${it.itemName || ''} ${it.catchcopy || ''} ${it.itemCaption || ''}`;
+  const nameText = `${it.itemName || ''} ${it.catchcopy || ''}`;
+  const text = strict ? nameText : `${nameText} ${it.itemCaption || ''}`;
+  if ((slot.ban || []).some(b => nameText.includes(b))) return false;
   return must.some(m => text.includes(m));
 }
 /* 用途違い・禁止語・低評価などの共通の除外 */
@@ -180,7 +186,7 @@ function itemOk(it, minReviewAvg, priceRule) {
 function pickItem(items, minReviewAvg, slot) {
   for (const it of items) {
     if (!itemOk(it, minReviewAvg, null)) continue;
-    if (!slotMatches(it, slot)) continue;
+    if (!slotMatches(it, slot, false)) continue;
     return it;
   }
   return null;
@@ -372,8 +378,8 @@ async function buildCategory(cat, month) {
       const code = String(it.itemCode || '');
       if (!code || seen.has(code)) continue;
       if (!itemOk(it, config.rules.minReviewAvg, cat.price)) continue;
-      if (require.length && !require.some(w => `${it.itemName || ''} ${it.catchcopy || ''} ${it.itemCaption || ''}`.includes(w))) continue;
-      const slot = slots.find(s => slotMatches(it, s));
+      if (require.length && !require.some(w => `${it.itemName || ''} ${it.catchcopy || ''}`.includes(w))) continue;
+      const slot = slots.find(s => slotMatches(it, s, true));
       if (!slot) continue;
       if ((perSlot[slot.label] || 0) >= MAX_PER_SLOT) continue;
       perSlot[slot.label] = (perSlot[slot.label] || 0) + 1;
