@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-03",
- "updatedAt": "2026-10-03T00:09:16.793Z",
+ "updated": "2026-10-04",
+ "updatedAt": "2026-10-03T23:30:28.753Z",
  "month": 10,
  "basis": "楽天市場の売れ筋ランキング（ジャンル別）から、個包装など差し入れ向きの条件に合う商品を自動で選び、楽天の順位のまま掲載。足りない枠は検索の売れ筋順で補う。毎日自動更新",
  "avoid": [
@@ -48,7 +48,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 2,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -172,14 +172,14 @@
      "name": "マスク 不織布 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク マスク カラーマス",
      "code": "cicib:10002043",
      "price": "1980",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day1/msk50-6_99.jpg?_ex=128x128",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day2/msk50-6_95.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00sa33o.17r0l9d9.g00sa33o.17r0mabd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicib%2Fmsk50-6%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E4%B8%8D%E7%B9%94%E5%B8%83%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
      "reviewAvg": "4.45",
-     "reviewCount": 35811,
+     "reviewCount": 35814,
      "shop": "CICI BELLA",
      "src": "rank",
-     "rankSrc": 49,
+     "rankSrc": 44,
      "genre": 551169,
      "rank": 1,
      "mv": "same",
@@ -188,20 +188,39 @@
     {
      "label": "個包装マスク",
      "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
-     "name": "マスク 秋用マスク 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク 立体 マスク ",
-     "code": "cicibella-sports:10000801",
-     "price": "595",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicibella-sports/top-image/day1/mskblt20_100.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tpvro.17r0la1a.g00tpvro.17r0mb02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicibella-sports%2Fmskblt20%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%A7%8B%E7%94%A8%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
-     "reviewAvg": "4.44",
-     "reviewCount": 47197,
-     "shop": "cicibella sports",
+     "name": "マスク 立体 不織布 55枚 44枚 全18色 バイカラー 3D 4層 冷感 3層 おしゃれ 不織布マスク 立体マスク ",
+     "code": "labelbank:10000091",
+     "price": "599",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/labelbank/cabinet/13688279/a_1_20260806.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00us8ko.17r0l708.g00us8ko.17r0mfbf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flabelbank%2Fmask%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93%20%E4%B8%8D%E7%B9%94%E5%B8%83&tag=hiroyukinak01-22",
+     "reviewAvg": "4.58",
+     "reviewCount": 43,
+     "shop": "ラベルバンク　楽天市場店",
      "src": "rank",
-     "rankSrc": 129,
+     "rankSrc": 161,
      "genre": 551169,
      "rank": 2,
-     "mv": "same",
+     "mv": "new",
+     "mvN": 0
+    },
+    {
+     "label": "携帯ウェットティッシュ",
+     "note": "食べる前・小物を触る前に。小さいサイズが喜ばれる",
+     "name": "新カラー登場 ワンタッチで開く シートケース ウェットティッシュケース ウェットシート ホルダー おしゃれ かわいい ワ",
+     "code": "shopmarna:10006361",
+     "price": "1980",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shopmarna/cabinet/item_top/r/r680.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qtg2o.17r0lac4.g00qtg2o.17r0m030/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopmarna%2Fw636%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%96%B0%E3%82%AB%E3%83%A9%E3%83%BC%E7%99%BB%E5%A0%B4%20%E3%83%AF%E3%83%B3%E3%82%BF%E3%83%83%E3%83%81%E3%81%A7%E9%96%8B%E3%81%8F%20%E3%82%B7%E3%83%BC%E3%83%88%E3%82%B1%E3%83%BC%E3%82%B9&tag=hiroyukinak01-22",
+     "reviewAvg": "4.63",
+     "reviewCount": 652,
+     "shop": "マーナ公式楽天市場店",
+     "src": "rank",
+     "rankSrc": 393,
+     "genre": 215783,
+     "rank": 3,
+     "mv": "new",
      "mvN": 0
     },
     {
@@ -218,9 +237,9 @@
      "shop": "楽天24",
      "src": "search",
      "rankSrc": null,
-     "rank": 3,
-     "mv": "up",
-     "mvN": 3
+     "rank": 4,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "ハンドクリーム（無香料）",
@@ -236,9 +255,9 @@
      "shop": "ネンリンラボ精油とコスメの専門店",
      "src": "search",
      "rankSrc": null,
-     "rank": 4,
-     "mv": "new",
-     "mvN": 0
+     "rank": 5,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "貼らないカイロ",
@@ -254,9 +273,9 @@
      "shop": "便利生活 マイルーム",
      "src": "search",
      "rankSrc": null,
-     "rank": 5,
-     "mv": "up",
-     "mvN": 2
+     "rank": 6,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "あぶらとり紙",
@@ -272,9 +291,9 @@
      "shop": "じぶん生活館",
      "src": "search",
      "rankSrc": null,
-     "rank": 6,
-     "mv": "new",
-     "mvN": 0
+     "rank": 7,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "汗拭きシート（無香料）",
@@ -290,9 +309,9 @@
      "shop": "マツモトキヨシ楽天市場店",
      "src": "search",
      "rankSrc": null,
-     "rank": 7,
-     "mv": "new",
-     "mvN": 0
+     "rank": 8,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "蒸気でホットアイマスク",
@@ -308,9 +327,9 @@
      "shop": "快適ホームライフ",
      "src": "search",
      "rankSrc": null,
-     "rank": 8,
-     "mv": "new",
-     "mvN": 0
+     "rank": 9,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "絆創膏（スリム）",
@@ -326,8 +345,8 @@
      "shop": "マツヨシ 楽天市場店",
      "src": "search",
      "rankSrc": null,
-     "rank": 9,
-     "mv": "up",
+     "rank": 10,
+     "mv": "down",
      "mvN": 1
     }
    ]
