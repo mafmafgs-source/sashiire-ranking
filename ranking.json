@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-20",
- "updatedAt": "2026-10-20T00:05:43.188Z",
+ "updated": "2026-10-21",
+ "updatedAt": "2026-10-20T23:36:38.162Z",
  "month": 10,
  "basis": "楽天市場の売れ筋ランキング（ジャンル別）から、個包装など差し入れ向きの条件に合う商品を自動で選び、楽天の順位のまま掲載。足りない枠は検索の売れ筋順で補う。毎日自動更新",
  "avoid": [
@@ -30,8 +30,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 1,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "個包装のど飴",
@@ -48,8 +48,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 2,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "個包装チョコ",
@@ -66,7 +66,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 3,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -102,8 +102,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 5,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "一口ようかん",
@@ -120,7 +120,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 6,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -156,8 +156,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 8,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     }
    ]
   },
@@ -172,14 +172,14 @@
      "name": "マスク 不織布 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク マスク カラーマス",
      "code": "cicib:10002043",
      "price": "1980",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day3/msk50-6_96.jpg?_ex=128x128",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day4/msk50-6_97.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00sa33o.17r0l9d9.g00sa33o.17r0mabd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicib%2Fmsk50-6%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E4%B8%8D%E7%B9%94%E5%B8%83%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
      "reviewAvg": "4.45",
-     "reviewCount": 35877,
+     "reviewCount": 35881,
      "shop": "CICI BELLA",
      "src": "rank",
-     "rankSrc": 33,
+     "rankSrc": 37,
      "genre": 551169,
      "rank": 1,
      "mv": "same",
@@ -191,36 +191,55 @@
      "name": "マスク 秋用マスク 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク 立体 マスク ",
      "code": "cicibella-sports:10000801",
      "price": "595",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicibella-sports/top-image/day3/mskblt20_102.jpg?_ex=128x128",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicibella-sports/top-image/day4/mskblt20_98.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tpvro.17r0la1a.g00tpvro.17r0mb02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicibella-sports%2Fmskblt20%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%A7%8B%E7%94%A8%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
      "reviewAvg": "4.44",
-     "reviewCount": 47210,
+     "reviewCount": 47211,
      "shop": "cicibella sports",
      "src": "rank",
-     "rankSrc": 128,
+     "rankSrc": 116,
      "genre": 551169,
      "rank": 2,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
-     "label": "携帯ウェットティッシュ",
-     "note": "食べる前・小物を触る前に。小さいサイズが喜ばれる",
-     "name": "即納 楽天NO1 TIAMORA ウェットシート キッチンクリーン シート ウェットティッシュ 掃除シート クイックルク",
-     "code": "toyokura:10000219",
-     "price": "990",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/toyokura/cabinet/kcs/kcs-top/2.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uqk8o.17r0l235.g00uqk8o.17r0m3c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoyokura%2Fkcs-01%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%8D%B3%E7%B4%8D%20%E6%A5%BD%E5%A4%A9NO1%20TIAMORA&tag=hiroyukinak01-22",
-     "reviewAvg": "4.48",
-     "reviewCount": 216,
-     "shop": "R・BOOM 2号店",
+     "label": "個包装の入浴剤",
+     "note": "撮影後のごほうびに。かさばらず日持ちする",
+     "name": "重炭酸入浴剤 ホットタブ 血行促進 ウェルネス 薬用 HOT TAB ギフト 贈り物 プレゼント 怠さ 睡眠 保湿 乾燥",
+     "code": "hottabstore:10000066",
+     "price": "1000",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/hottabstore/cabinet/wellness/lp/09831043/wellness_samune.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tn6eo.17r0lb2f.g00tn6eo.17r0m164/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhottabstore%2Fwellness_90_ss%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%87%8D%E7%82%AD%E9%85%B8%E5%85%A5%E6%B5%B4%E5%89%A4%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%BF%E3%83%96%20%E8%A1%80%E8%A1%8C%E4%BF%83%E9%80%B2&tag=hiroyukinak01-22",
+     "reviewAvg": "4.73",
+     "reviewCount": 760,
+     "shop": "HOT TAB（ホットタブ）公式ストア",
      "src": "rank",
-     "rankSrc": 450,
+     "rankSrc": 406,
      "genre": 215783,
      "rank": 3,
-     "mv": "down",
+     "mv": "new",
+     "mvN": 0
+    },
+    {
+     "label": "蒸気でホットアイマスク",
+     "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
+     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
+     "code": "l-plus:10200970",
+     "price": "1650",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qzvko.17r0l3ae.g00qzvko.17r0m626/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%81%E3%81%90%E3%82%8A%E3%82%BA%E3%83%A0%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF%20%E8%92%B8%E6%B0%97%E3%82%81%E3%81%90%E3%82%8B%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF&tag=hiroyukinak01-22",
+     "reviewAvg": "4.7",
+     "reviewCount": 214,
+     "shop": "miui",
+     "src": "rank",
+     "rankSrc": 544,
+     "genre": 100938,
+     "rank": 4,
+     "mv": "up",
      "mvN": 1
     },
     {
@@ -237,26 +256,8 @@
      "shop": "FANCL公式ショップ 楽天市場店",
      "src": "search",
      "rankSrc": null,
-     "rank": 4,
-     "mv": "up",
-     "mvN": 3
-    },
-    {
-     "label": "蒸気でホットアイマスク",
-     "note": "撮影後の目の疲れに。もらって嬉しい率が高い",
-     "name": "めぐりズム ホットアイマスク 蒸気めぐるアイマスク 12枚入 アイマスク 温かい 使い捨て 花王 無香料 完熟ゆず ラベ",
-     "code": "l-plus:10200970",
-     "price": 1650,
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/l-plus/cabinet/tasya130/imgrc0104276845.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qzvko.17r0l3ae.g00qzvko.17r0m626/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fl-plus%2F7147369%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fl-plus%2Fi%2F10200970%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%81%E3%81%90%E3%82%8A%E3%82%BA%E3%83%A0%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF%20%E8%92%B8%E6%B0%97%E3%82%81%E3%81%90%E3%82%8B%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF&tag=hiroyukinak01-22",
-     "reviewAvg": 4.7,
-     "reviewCount": 214,
-     "shop": "miui",
-     "src": "search",
-     "rankSrc": null,
      "rank": 5,
-     "mv": "up",
+     "mv": "down",
      "mvN": 1
     },
     {
@@ -274,8 +275,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 6,
-     "mv": "up",
-     "mvN": 2
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "リップクリーム（無香料）",
@@ -292,7 +293,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 7,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -310,8 +311,8 @@
      "src": "search",
      "rankSrc": null,
      "rank": 8,
-     "mv": "up",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
     },
     {
      "label": "ハンドクリーム（無香料）",
@@ -328,7 +329,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 9,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
