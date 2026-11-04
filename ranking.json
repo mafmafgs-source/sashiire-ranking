@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-03",
- "updatedAt": "2026-11-03T02:45:13.521Z",
+ "updated": "2026-11-04",
+ "updatedAt": "2026-11-04T01:01:44.504Z",
  "month": 11,
  "basis": "楽天市場の売れ筋ランキング（ジャンル別）から、個包装など差し入れ向きの条件に合う商品を自動で選び、楽天の順位のまま掲載。足りない枠は検索の売れ筋順で補う。毎日自動更新",
  "avoid": [
@@ -138,7 +138,7 @@
      "src": "search",
      "rankSrc": null,
      "rank": 7,
-     "mv": "new",
+     "mv": "same",
      "mvN": 0
     },
     {
@@ -156,8 +156,26 @@
      "src": "search",
      "rankSrc": null,
      "rank": 8,
-     "mv": "down",
-     "mvN": 1
+     "mv": "same",
+     "mvN": 0
+    },
+    {
+     "label": "個包装クッキー",
+     "note": "崩れにくく、待ち時間のおやつに",
+     "name": "江崎グリコ クリームコロン 大袋 クリスマス 9個装入 { クリスマスお菓子 クリスマス お菓子 個包装 子供 クッキー",
+     "code": "festival-plaza:10065179",
+     "price": 378,
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/festival-plaza/cabinet/00499596/xmoks2026/xm-oks-009875-0930.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00psiio.17r0lc72.g00psiio.17r0m7ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffestival-plaza%2Fxm-oks-009875-0930%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffestival-plaza%2Fi%2F10065179%2F&rafcid=wsc_i_is_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%B1%9F%E5%B4%8E%E3%82%B0%E3%83%AA%E3%82%B3%20%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AD%E3%83%B3%20%E5%A4%A7%E8%A2%8B&tag=hiroyukinak01-22",
+     "reviewAvg": 0,
+     "reviewCount": 0,
+     "shop": "フェスティバルプラザ",
+     "src": "search",
+     "rankSrc": null,
+     "rank": 9,
+     "mv": "new",
+     "mvN": 0
     }
    ]
   },
@@ -172,35 +190,54 @@
      "name": "マスク 不織布 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク マスク カラーマス",
      "code": "cicib:10002043",
      "price": "1980",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day2/msk50-6_95.jpg?_ex=128x128",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicib/top-image/day3/msk50-6_96.jpg?_ex=128x128",
      "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00sa33o.17r0l9d9.g00sa33o.17r0mabd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicib%2Fmsk50-6%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
      "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E4%B8%8D%E7%B9%94%E5%B8%83%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
      "reviewAvg": "4.45",
-     "reviewCount": 35922,
+     "reviewCount": 35926,
      "shop": "CICI BELLA",
      "src": "rank",
-     "rankSrc": 41,
+     "rankSrc": 34,
      "genre": 551169,
      "rank": 1,
      "mv": "same",
      "mvN": 0
     },
     {
+     "label": "ハンドクリーム（無香料）",
+     "note": "小さめサイズが荷物に優しい",
+     "name": "【カメ印 カメ印ハンドクリーム(得用80g入り）美容 美肌 保湿",
+     "code": "auc-yoshitakaya:10000020",
+     "price": "1650",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-yoshitakaya/cabinet/lp/hand/thumb_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rka5o.17r0lea3.g00rka5o.17r0mafd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-yoshitakaya%2F20140726%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E7%BE%8E%E8%82%8C%20%E4%BF%9D%E6%B9%BF&tag=hiroyukinak01-22",
+     "reviewAvg": "4.88",
+     "reviewCount": 59,
+     "shop": "有馬温泉の吉高屋楽天市場店",
+     "src": "rank",
+     "rankSrc": 56,
+     "genre": 100939,
+     "rank": 2,
+     "mv": "new",
+     "mvN": 0
+    },
+    {
      "label": "個包装マスク",
      "note": "移動中のメイク保護や乾燥対策に。配りやすい個包装",
-     "name": "マスク 秋用マスク 立体 3Dマスク 立体マスク 不織布マスク バイカラーマスク 血色マスク 小顔マスク 立体 マスク ",
-     "code": "cicibella-sports:10000801",
-     "price": "595",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/cicibella-sports/top-image/day2/mskblt20_101.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tpvro.17r0la1a.g00tpvro.17r0mb02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicibella-sports%2Fmskblt20%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%A7%8B%E7%94%A8%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93&tag=hiroyukinak01-22",
-     "reviewAvg": "4.44",
-     "reviewCount": 47218,
-     "shop": "cicibella sports",
+     "name": "マスク 立体 不織布 55枚 44枚 全18色 バイカラー 3D 4層 冷感 3層 おしゃれ 不織布マスク 立体マスク ",
+     "code": "labelbank:10000091",
+     "price": "599",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/labelbank/cabinet/13688279/a_1_20260806.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00us8ko.17r0l708.g00us8ko.17r0mfbf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flabelbank%2Fmask%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%B9%E3%82%AF%20%E7%AB%8B%E4%BD%93%20%E4%B8%8D%E7%B9%94%E5%B8%83&tag=hiroyukinak01-22",
+     "reviewAvg": "4.7",
+     "reviewCount": 128,
+     "shop": "ラベルバンク　楽天市場店",
      "src": "rank",
-     "rankSrc": 171,
+     "rankSrc": 130,
      "genre": 551169,
-     "rank": 2,
+     "rank": 3,
      "mv": "new",
      "mvN": 0
     },
@@ -217,28 +254,28 @@
      "reviewCount": 94,
      "shop": "ゆにでのこづち",
      "src": "rank",
-     "rankSrc": 197,
+     "rankSrc": 205,
      "genre": 100938,
-     "rank": 3,
-     "mv": "up",
-     "mvN": 4
+     "rank": 4,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "ハンドクリーム（無香料）",
      "note": "小さめサイズが荷物に優しい",
-     "name": "パフュームシルキーハンドクリーム 50ml ハンドクリーム ギフト プレゼント 誕生日プレゼント クリスマスプレゼント ",
-     "code": "hetras:10000004",
-     "price": "1490",
-     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/hetras/cabinet/12800091/12837397/14062747/imgrc0116203959.jpg?_ex=128x128",
-     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uv0eo.17r0l778.g00uv0eo.17r0m797/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhetras%2Fhandcream_0006%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
-     "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%95%E3%83%A5%E3%83%BC%E3%83%A0%E3%82%B7%E3%83%AB%E3%82%AD%E3%83%BC%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%20%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%20%E3%82%AE%E3%83%95%E3%83%88&tag=hiroyukinak01-22",
-     "reviewAvg": "4.32",
-     "reviewCount": 25,
-     "shop": "hetras 公式ショップ楽天市場店",
+     "name": "カメ印ハンドクリーム(チューブタイプ20g入り) 美容 美肌 保湿",
+     "code": "auc-yoshitakaya:10000036",
+     "price": "605",
+     "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-yoshitakaya/cabinet/lp/hand/thumb_1.jpg?_ex=128x128",
+     "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rka5o.17r0lea3.g00rka5o.17r0mafd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-yoshitakaya%2F20210315%2F&rafcid=wsc_i_ra_a2e6ed6b-8f77-4418-8518-93200cda0076",
+     "amazonUrl": "https://www.amazon.co.jp/s?k=%E7%BE%8E%E5%AE%B9%20%E7%BE%8E%E8%82%8C%20%E4%BF%9D%E6%B9%BF&tag=hiroyukinak01-22",
+     "reviewAvg": "4.89",
+     "reviewCount": 9,
+     "shop": "有馬温泉の吉高屋楽天市場店",
      "src": "rank",
-     "rankSrc": 462,
+     "rankSrc": 232,
      "genre": 100939,
-     "rank": 4,
+     "rank": 5,
      "mv": "new",
      "mvN": 0
     },
@@ -256,9 +293,9 @@
      "shop": "FANCL公式ショップ 楽天市場店",
      "src": "search",
      "rankSrc": null,
-     "rank": 5,
-     "mv": "same",
-     "mvN": 0
+     "rank": 6,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "蒸気でホットアイマスク",
@@ -274,9 +311,9 @@
      "shop": "miui",
      "src": "search",
      "rankSrc": null,
-     "rank": 6,
-     "mv": "same",
-     "mvN": 0
+     "rank": 7,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "リップクリーム（無香料）",
@@ -292,9 +329,9 @@
      "shop": "楽天24",
      "src": "search",
      "rankSrc": null,
-     "rank": 7,
-     "mv": "new",
-     "mvN": 0
+     "rank": 8,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "汗拭きシート（無香料）",
@@ -310,9 +347,9 @@
      "shop": "コスメボックス",
      "src": "search",
      "rankSrc": null,
-     "rank": 8,
-     "mv": "same",
-     "mvN": 0
+     "rank": 9,
+     "mv": "down",
+     "mvN": 1
     },
     {
      "label": "絆創膏（スリム）",
@@ -328,8 +365,8 @@
      "shop": "マツヨシ 楽天市場店",
      "src": "search",
      "rankSrc": null,
-     "rank": 9,
-     "mv": "up",
+     "rank": 10,
+     "mv": "down",
      "mvN": 1
     }
    ]
